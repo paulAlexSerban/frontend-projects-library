@@ -1,0 +1,10 @@
+$cmp: "a-button";
+
+.#{$cmp} {
+  @include element("base") {
+    @include font($button);
+    @include use-extends((cursor-pointer, display-inline-block, no-border));
+
+    padding: $baseline ($gutter * 2);
+  }
+}
