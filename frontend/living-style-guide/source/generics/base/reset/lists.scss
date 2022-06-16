@@ -1,0 +1,5 @@
+ul,
+ol {
+  @extend %margin-reset;
+  list-style: none;
+}

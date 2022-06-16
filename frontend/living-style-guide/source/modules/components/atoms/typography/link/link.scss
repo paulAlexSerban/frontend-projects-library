@@ -1,0 +1,9 @@
+$cmp:  "a-link";
+
+.#{$cmp} {
+  @include e("base"){
+    @include font($link);
+
+    color: var(--color-link);
+  }
+}

@@ -7,18 +7,27 @@
     "test": "echo 'Error: no test specified'",
     "prepare": "husky install",
     "install:dependencies:ci": "npm ci --omit=dev --ignore-scripts",
-    "install:dependencies:dev": "npm install"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/paulAlexSerban/tpl--basic-prj.git"
+    "install:dependencies:dev": "npm install",
+    "install:subprojects:dev-deps": "bash package-scripts.bash installSubPrjDevDependencies",
+    "/":"START - Docker Compose",
+    "start:compose:proxy": "bash package-scripts.bash startComposeProxy",
+    "start:compose:fsg": "bash package-scripts.bash startComposeFsg",
+    "start:compose:prototype": "bash package-scripts.bash startPrototype",
+    "start:compose:whoami": "bash package-scripts.bash startWhoami",
+    "////":"STOP - Docker Compose",
+    "stop:compose:proxy": "bash package-scripts.bash stopComposeProxy",
+    "stop:compose:fsg": "bash package-scripts.bash stopComposeFsg",
+    "stop:compose:prototype": "bash package-scripts.bash stopPrototype",
+    "stop:compose:whoami": "bash package-scripts.bash stopWhoami",
+    "//":"DEVELOP",
+    "dev:frontend:fsg":"npm --prefix frontend/frontend-style-guide run dev:fsg",
+    "build:frontend:prototype": "npm --prefix frontend/static/prototype run build:prototype",
+    "watch:frontend:fsg":"npm --prefix frontend/frontend-style-guide run watch:fsg",
+    "watch:frontend:prototype:styles": "npm --prefix frontend/static/prototype run watch:prototype:styles",
+    "watch:frontend:prototype": "npm --prefix frontend/static/prototype run watch:prototype"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/paulAlexSerban/tpl--basic-prj/issues"
-  },
-  "homepage": "https://github.com/paulAlexSerban/tpl--basic-prj#readme",
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
