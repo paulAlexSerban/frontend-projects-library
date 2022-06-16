@@ -1,6 +1,6 @@
 module.exports = {
   branches: "main",
-  repositoryUrl: "https://github.com/paulAlexSerban/tpl--basic-prj",
+  repositoryUrl: "https://github.com/paulAlexSerban/fe--ui-techstack-insights",
   plugins: [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
