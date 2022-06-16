@@ -1,0 +1,5 @@
+@mixin use-extends($collection: ()) {
+  @each $el in $collection {
+    @extend %#{$el};
+  }
+}

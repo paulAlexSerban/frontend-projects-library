@@ -1,0 +1,3 @@
+%flex-col {
+  @include flex($direction: column, $main: flex-start);
+}
