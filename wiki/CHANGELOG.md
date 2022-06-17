@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/paulAlexSerban/fe--ui-techstack-insights/compare/v1.1.0...v1.2.0) (2022-06-17)
+
+
+### Features
+
+* **update:** update as per tpl--basic-prj@1.2.1 ([bad1a73](https://github.com/paulAlexSerban/fe--ui-techstack-insights/commit/bad1a730e29b58a4119f486e6bcc452c3c7cbaf4))
+
 # [1.1.0](https://github.com/paulAlexSerban/fe--ui-techstack-insights/compare/v1.0.0...v1.1.0) (2022-06-16)
 
 
