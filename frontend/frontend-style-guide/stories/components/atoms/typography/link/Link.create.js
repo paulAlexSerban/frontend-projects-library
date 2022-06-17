@@ -1,3 +1,4 @@
+import "../../../../structure/pages/index/index.page.layer.scss";
 import "./link.atom.scss";
 
 export const createLink = ({ text, href, target, type }) => {
