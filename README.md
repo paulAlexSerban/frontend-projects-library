@@ -14,7 +14,7 @@
 
 ### File structure
 
-- File Structure based on `paulAlexSerban/tpl--basic-prj@1.1.0`
+- File Structure based on `paulAlexSerban/tpl--basic-prj@1`
 - removed Wordpress and React related scripts
 
 ## Useful Local Development URLs
