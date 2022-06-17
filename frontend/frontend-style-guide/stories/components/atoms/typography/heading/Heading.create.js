@@ -1,3 +1,4 @@
+import "../../../../structure/pages/index/index.page.layer.scss";
 import "./heading.atom.scss";
 
 export const createHeading = ({
