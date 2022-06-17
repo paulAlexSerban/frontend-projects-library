@@ -1,3 +1,4 @@
+import "../../../../structure/pages/index/index.page.layer.scss";
 import "./paragraph.atom.scss";
 
 export const createParagraph = ({ content }) => {  
