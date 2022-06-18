@@ -22,3 +22,96 @@ $breakpoints: $column-grid-12;
 
 // Import template
 @import "../../templates/generic/generic.template.scss";
+
+/* html basics code - TODO - integrate in LSG */
+
+.basepage {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.main {
+  &__base {
+    border: 2px solid #a9a9a9;
+    padding: 5px;
+  }
+}
+
+.header {
+  &__base {
+    width: 99.99%;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    text-align: center;
+  }
+}
+
+.article {
+  &__base {
+    margin-bottom: 10px;
+    background-color: rgb(231, 229, 229);
+    padding: 16px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+
+.section {
+  &__base {
+    width: 80%;
+    min-width: 400px;
+    margin: 0 auto 24px;
+    background-color: rgb(255, 255, 255);
+    padding: 16px;
+    border-left: 6px solid #a9a9a9;
+  }
+
+  &__text {
+    text-indent: 24px;
+  }
+
+  &__preformatted-text {
+    border: 1px solid #a9a9a9;
+    width: fit-content;
+    margin: auto;
+    padding: 0 16px;
+  }
+}
+
+.definition-list {
+  &__term {
+    font-weight: bolder;
+    margin-top: 10px;
+  }
+}
+
+.figure {
+  &__base {
+    border: thin solid #c0c0c0;
+    display: block;
+    padding: 5px;
+    width: fit-content;
+    margin: auto;
+  }
+
+  &__image {
+    max-width: 400px;
+    max-height: 300px;
+
+    @media (min-width: 768px) {
+      max-width: 750px;
+    }
+  }
+
+  &__caption {
+    background-color: #222;
+    color: #fff;
+    padding: 3px;
+    text-align: center;
+  }
+}
