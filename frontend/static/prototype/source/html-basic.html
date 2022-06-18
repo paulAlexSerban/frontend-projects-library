@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./css/pages/index.page.css" />
+  <title>HTML Basics</title>
+</head>
+
+<body class="basepage">
+  <header class="header__base">
+    <h1 class="header__text">HTML Basics</h1>
+  </header>
+  <main>
+    <div class="main__base">
+      <article>
+        <div class="article__base">
+          <h2 class="article__title">HTML Doctype</h2>
+          <section class="section__base">
+            <h3 class="section__title">About Doctype</h3>
+            <p class="section__text">
+              The HTML <code>!DOCTYPE</code> declaration is the required preamble found at the top of all
+              HTML
+              documents before opening the
+              <code>html</code> tag and it is an instruction to the web-browser about what version of HTML
+              the
+              page is written in
+            </p>
+            <p class="section__text">
+              The main purpose of the <code>!DOCTYPE</code> declaration is to prevent a browser from
+              switching
+              into
+              the so-called <a href="#quirkMode">quirk mode</a> when rendering the HTML document.
+            </p>
+            <p class="section__text">
+              Also the <code>!DOCTYPE html</code> declaration ensures that the browser makes the
+              best-effort
+              attempt
+              at
+              following the relevant specifications rather than using a different rendering mode that is
+              incompatible with some specifications and it is required to insure that your web pages are
+              displayed
+              the
+              way they were intended to be displayed.
+            </p>
+          </section>
+          <section class="section__base">
+            <h3 class="section__title">Nota Bene</h3>
+            <ul class="section__list">
+              <li class="section__list-item">
+                The <code>!DOCTYPE</code> declaration is NOT a HTML tag and is NOT case sensitive;
+              </li>
+              <li class="section__list-item">
+                The <code>!DOCTYPE</code> declaration points to a Document Type Definition (DTD) and it
+                is
+                an
+                instruction to the web browser about the version of the markup language the page is
+                written
+                in;
+              </li>
+            </ul>
+          </section>
+          <section class="section__base">
+            <h3 class="section__title">Tips & Tricks</h3>
+            <p class="section__text">
+              - always use W3C's validator to check your HTML for markup or syntax error before publishing
+              online;
+            </p>
+            <p class="section__text">
+              - there is an additional tag to be put for Internet Explorer &lt;=10 users to avoid <a
+                href="#quirkMode">quirk mode</a> in the <code> &lt;head&gt; </code>: <code>&lt;meta
+                http-equiv="X-UA-Compatible" content="IE-Edge"&gt;</code>
+            </p>
+          </section>
+          <section class="section__base">
+            <h3 class="section__title">Notes</h3>
+            <dl class="definition-list__base">
+              <dt class="definition-list__term" id="quirkMode">Quirck Mode</dt>
+              <dd class="definition-list__explanation">
+                - refers to a technique used by some web browsers for the
+                sake of maintaining backward compatibility with web pages designed for old web browsers
+                instead
+                of strictly complying with W3C and IETF standards in standards mode.
+              </dd>
+            </dl>
+          </section>
+        </div>
+      </article>
+      <article>
+        <div class="article__base">
+          <h2 class="article__title">
+            HTML DOM, Node-tree, Node-elements and Values
+          </h2>
+          <section class="section__base">
+            <h3 class="section__title">HTML & JavaScript DOM</h3>
+            <dl class="definition-list__base">
+              <dt class="definition-list__term">It defines:</dt>
+              <dd class="definition-list__explanation">HTML elements as objects;</dd>
+              <dd class="definition-list__explanation">Properties for all HTML elements;</dd>
+              <dd class="definition-list__explanation">Methods for all HTML elements;</dd>
+              <dd class="definition-list__explanation">Events for all HTML elements</dd>
+            </dl>
+            <dl class="definition-list__base">
+              <dt class="definition-list__term">JS can add/change/remove/react to:</dt>
+              <dd class="definition-list__explanation">HTML elements</dd>
+              <dd class="definition-list__explanation">HTML attributes</dd>
+              <dd class="definition-list__explanation">HTML events</dd>
+            </dl>
+          </section>
+          <section class="section__base">
+            <h3 class="section__title">Document Object Model (DOM)</h3>
+            <p class="section__text">
+              The DOM is a programming interface for HTML and XML documents. It represents the document as
+              nodes
+              and
+              objects which can be accessed with programming languages to change the document structure,
+              style
+              and
+              content.
+            </p>
+            <p class="section__text">
+              When the page is loaded, the browser creates a Document Object Model of the page, this
+              represents
+              the
+              document that can be manipulated as it is an object-oriented representation of the page
+              which
+              can be
+              modified with a programming language such as JavaScript.
+            </p>
+            <figure class="figure__base">
+              <img class="figure__image figure__image--medium" src="https://i.ibb.co/Zd9zfWF/img-html-dom-tree.gif"
+                alt="html dom tree representation" />
+              <figcaption class="figure__caption">The HTML DOM model is constructed as a tree of objects.
+              </figcaption>
+            </figure>
+            <p class="section__text">
+              The DOM is built using multiple APIs that work together, the core DOM defines the objects
+              that
+              describe
+              the document and the objects within it this way other APIs can add new features and
+              capabilities
+              to
+              the
+              DOM.
+            </p>
+            <p class="section__text">
+              To access the HTML elements with JavaScript you can select them using by ID, tag name, class
+              name,
+              CSS
+              selectors and HTML object collections.
+            </p>
+          </section>
+          <section class="section__base">
+            <h3 class="section__title">Node-trees, node elements and values</h3>
+            <p class="section__text">
+              The HTML DOM Node Tree or the Document Tree is the term used to reference the HTML
+              tree-structure
+              which
+              is also called a node-tree.
+            </p>
+            <p class="section__text">Through the node-tree all nodes can be accessed, their contents can be
+              modified
+              pr
+              deleted, and new elements can be created.</p>
+            <p class="section__text">The nodes in a tree have a hierarchical relationship to each other,
+              these
+              relationships are described using terms such as parent, child, and sibling.</p>
+            <p class="section__text">
+              In a node tree, the top node is called the root, every node, except the root, has only one
+              parent
+              node,
+              a node can have any number of children, a leaf is a node with no children and siblings are
+              nodes
+              with
+              the same parent.
+            </p>
+            <p class="section__text">
+              A node-element is the most general base class from which all element objects in a HTML
+              document
+              inherits
+              properties from its parent node.
+            </p>
+            <p class="section__text">
+              The node-value is used to get the content of the node, mostly used for text elements becaus
+              for
+              most
+              of
+              the others it returns null.
+            </p>
+          </section>
+        </div>
+      </article>
+      <article>
+        <div class="article__base">
+          <h2 class="article__title">
+            HTML5 Semantic & Sectioning Elements
+          </h2>
+          <section class="section__base">
+            <h3 class="section__title">
+              Semantics in HTML
+            </h3>
+            <p class="section__text">
+              When we talk about semantics in programming we refer to the meaning of the piece of code in
+              that
+              specific purpose.
+            </p>
+            <p class="section__text">
+              HTML tags tell the browser how to display the content on the page, but as these elements do
+              not
+              give
+              any indication about what type of content they contain ot the role they have, semantic HTML5
+              elements were implemented to address the problem by defining specific tags to indicate a
+              clear
+              role
+              about the content of the element.
+            </p>
+            <p class="section__text">
+              In HTML, semantic elements give the content they wrap around a role/meaning in the entire
+              context of
+              the page, and by default the majority of the user agent stylesheets will style these
+              elements,
+              but
+              HTML should be coded to represent the data that will be populated and not based on its
+              default
+              presentation styling - presentation is the responsibility of CSS.
+            </p>
+            <p class="section__text">
+              Benefits of using HTML semantic elements:
+            </p>
+            <ul class="section__list">
+              <li class="section__list-item">Search engines rank pages according the semantic elements and
+                using
+                the contents as keywords.</li>
+              <li class="section__list-item">People using screen readers benefit from using semantically
+                correct
+                implemented elements, using these elements as signposts</li>
+              <li class="section__list-item">
+                Blocks of meaningful code is much more easier to find than searching through a much of
+                <code>&lt;div&gt;</code> elements.
+              </li>
+              <li class="section__list-item">
+                The semantic naming of the elements symbolizes the proper custom element naming.
+              </li>
+              <li class="section__list-item">
+                The developer benefit from using semantic elements because these suggest the type of
+                data
+                that
+                should be used as content.
+              </li>
+            </ul>
+            <p class="section_text">There are more than 100 semantic elements available but the most used
+              are:
+            </p>
+            <ul class="section__list">
+              <li class="section__list-item">
+                Main root - <code>&lt;html&gt;</code>
+              </li>
+              <li class="section__list-item">
+                Document metadata - <code>&lt;head&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;style&gt; and
+                  &lt;title&gt;</code></li>
+              <li class="section__list-item">
+                Sectioning root - <code>&lt;body&gt;</code></li>
+              <li class="section__list-item">
+                Content sectioning - <code>&lt;header&gt;, &lt;main&gt;, &lt;footer&gt;,
+                  &lt;article&gt;,
+                  &lt;aside&gt;, &lt;nav&gt;, &lt;section&gt; and &lt;h1&gt;-&lt;h6&gt;</code></li>
+            </ul>
+            <figure class="figure__base">
+              <img class="figure__image figure__image--large" src="https://i.ibb.co/C0R95bT/html5-elements.png"
+                alt="HTML element flowchart - how to choose the elements" />
+              <figcaption class="figure__caption">Which Element is the right one to choose?</figcaption>
+            </figure>
+          </section>
+          <section class="section__base">
+            <h3 class="section__title">Using the HTML5 Sectioning Elements</h3>
+
+            <h4 class="section__title">The main Element</h4>
+            <p class="section__text">
+              The <code>&lt;main&gt;</code> element should contain the main content for your web page. All
+              of this content should be unique to the individual page, and should not appear elsewhere on
+              the site. Any content that is repeated on multiple pages (logos, search boxes, footer,
+              links, etc.) should no be placed within the <code>&lt;main&gt;</code> element.
+            </p>
+            <p class="section__text">The ARIA <code>role="main"</code> attribute indicates the significance
+              of this element to programs that don't yet support the <code>&lt;main&gt;</code> element
+              (such as screen readers).</p>
+
+            <h4 class="section__title">The article Element</h4>
+            <p class="section__text">
+              The <code>&lt;article&gt;</code> element should contain a piece of self-contained content
+              that could be distributed outside the context of the page. This includes things like news
+              articles, blog posts, or user comments.
+            </p>
+            <p class="section__text">There can also be nested <code>&lt;article&gt;</code> elements within
+              one another.</p>
+
+            <h4 class="section__title">The section Element</h4>
+            <p class="section__text">
+              The <code>&lt;section&gt;</code> element is used to represent a group of related content.
+              This is similar to the purpose of an <code>&lt;article&gt;</code> element with the main
+              difference being that the content within a <code>&lt;section&gt;</code> element does not
+              necessarily need to make sense out of the context of the page.
+            </p>
+            <p class="section__text">
+              There might be that the <code>&lt;article&gt;</code> element is used to represent a whole,
+              and then multiple <code>&lt;section&gt;</code> elements to represent each of the sub-topics.
+            </p>
+            <p class="section__text">
+              If you just need to group content together for styling purposes you should use a
+              <code>&lt;div&gt;</code> element rather than a <code>&lt;section&gt;</code> element.
+            </p>
+
+            <h4 class="section__title">The nav Element</h4>
+            <p class="section__text">
+              The <code>&lt;nav&gt;</code> element is used to mark up a collection of links to external
+              pages or sections within the current page. As well as being used for the main website
+              navigation, the <code>&lt;nav&gt;</code> element is also a good fit for things like a table
+              of contents or a blogroll.
+            </p>
+            <p class="section__text">
+              Marking up your links within a list will often make you navigation easier to use, however
+              this is not a requirement when using a <code>&lt;nav&gt;</code> element.
+            </p>
+
+            <h4 class="section__title">The aside Element</h4>
+            <p class="section__text">
+              The <code>&lt;aside&gt;</code> element is used to represent content that is tangibly related
+              to the content surrounding it, but could be considered separate. This includes things like
+              sidebars, groups of <code>&lt;nav&gt;</code> elements, figures and pull quotes.
+              </p>
+
+              <h4 class="section__title">The header Element</h4>
+              <p class="section__text">
+                The <code>&lt;header&gt;</code> element is used to represent the introductory content to
+                an article of web page. This will usually contain a heading element as well as some
+                metadata that is relevant to the content, such as a post date of a news article for
+                example. it could also contain a table of contents (within a <code>&lt;nav&gt;</code>
+                element) foa longer document.
+              </p>
+              <p class="section__text">
+                A <code>&lt;header&gt;</code> element will be associated with the nearest sectioning
+                element, usually it's direct parent in he page structure.
+              </p>
+
+              <h4 class="section__title">The footer Element</h4>
+              <p class="section__text">
+                The <code>&lt;footer&gt;</code> element is used to represent information about a section
+                such as the author, copyright information, or links ro related web pages.
+              </p>
+              <div class="section__text">
+                As with <code>&lt;header&gt;</code>, the <code>&lt;footer&gt;</code> element is
+                associated with the nearest sectioning element.
+              </div>
+
+              <h4 class="section__title">The address Element</h4>
+              <p class="section__text">
+                The <code>&lt;address&gt;</code> element is one of the most commonly misunderstood HTML
+                elements. This element is not for making up postal address, but rather for representing
+                the contact information for an article or web page. This could be a link to the author's
+                website or their email address.
+              </p>
+              <p class="section__text">
+                This element is ofthen used within the <code>&lt;footer&gt;</code> for an
+                <code>&lt;article&gt;</code>.
+              </p>
+          </section>
+          <section class="section__base">
+            <h3 class="section__title">
+              Nota Bene
+            </h3>
+            <p class="section__text">
+              The ARIA role attribute is used to indicate the significance of its element to programs that
+              do
+              not
+              yet support that specific semantic element, such as screen readers.
+            </p>
+            <p class="section__text">
+              For elements that have no ARIA role assigned the aria-label attribute should be used to
+              define
+              the
+              string that labels the current element.
+            </p>
+          </section>
+        </div>
+      </article>
+      <article>
+        <div class="article__base">
+          <h2 class="article__title">
+            Headers &lt;h1&gt; - &lt;h6&gt;
+          </h2>
+          <section class="section__base">
+            <h3 class="section__title">
+              About
+            </h3>
+            <p class="section__text">
+              The <code>&lt;h1&gt; - &lt;h6&gt; are used to define HTML headings</code> and mostly used
+              for
+              titles
+              and subtitles of the context they are in.
+            </p>
+          </section>
+          <section class="section__base">
+            <h3 class="section__title">
+              Accesibility concerns
+            </h3>
+            <p class="section__text">
+              Screen reading softweare, as a navigation technique jump from heading to heading to quickly
+              determine the content of the page - because of this it is important not to skip heading
+              levels
+              because it may create confusion.
+            </p>
+          </section>
+          <section class="section__base">
+            <h3 class="section__title">
+              Nota Bene
+            </h3>
+            <p class="section__text">
+              Headings may be used by user agents to construct a table pf contents for a document
+              automatically.
+            </p>
+            <p class="section__text">
+              Heading tags should not be used for styling purposes, use CSS for that. Heading tags should
+              be
+              used
+              to indicate their relative importance.
+            </p>
+            <p class="section__text">
+              Skipping heading levels is a very bad practice.
+            </p>
+            <p class="section__text">
+              The <code>&lt;h1&gt;</code> element should be used only once, it is the most important
+              heading,
+              and
+              tells you what the purpose of the overall page is - as you would not ahve a book with more
+              than
+              one
+              title per page - also having a single top-level title is arguably better for screenreader
+              users
+              and
+              SEO.
+            </p>
+          </section>
+        </div>
+      </article>
+      <article>
+        <div class="article__base">
+          <h2 class="article__title">
+            Semantic Website Structure
+          </h2>
+          <section class="section__base">
+            <h3 class="section__title">
+              What is ...
+            </h3>
+            <p class="section__text">
+              HTML uses a number of block level elements that define areas of the website such as "the
+              header",
+              "the navigation menu", "the main content column".
+            </p>
+            <p class="section__text">
+              It might be that webpages look pretty different from one another, but they all share the
+              same
+              standard components.
+            </p>
+          </section>
+          <section class="section__base">
+            <h3 class="section__title">
+              Which are these block level elements?
+            </h3>
+            <dl class="definition-list__base">
+              <dt class="definition-list__term">header</dt>
+              <dd class="definition-list__explanation">Usually this is he big strip across the top of the
+                page
+                with a big heading and/or logo. This is where the main common information about the
+                website
+                usually stays - this part is wrapped in the <code>&lt;header&gt;</code>.</dd>
+              <dt class="definition-list__term">navigation bar</dt>
+              <dd class="definition-list__explanation">All the links to the sites main sections should be
+                found
+                here represented by buttons, link sor tabs - this part is wrapped by
+                <code>&lt;nav&gt;</code>.
+              </dd>
+              <dt class="definition-list__term">main content</dt>
+              <dd class="definition-list__explanation">This is the biggest area of the page and contains
+                the
+                unique content of a given webpage - this part is wrapped by <code>&lt;main&gt;</code>,
+                and
+                its
+                content divided by <code>&lt;article&gt;, &lt;section&gt; and &lt;div&gt; </code>
+                elements.
+              </dd>
+              <dt class="definition-list__term">sidebar</dt>
+              <dd class="definition-list__explanation">In this part are placed some peripheral info,
+                links,
+                ads,
+                etc. Usually this is contextual to what is contained in the main content - this part is
+                wrapped
+                by <code>&lt;aside&gt;</code>.</dd>
+              <dt class="definition-list__term">footer</dt>
+              <dd class="definition-list__explanation"> This is the strip across the bottom of the page
+                that
+                generally contains the fine print, the copyright notices or contact info. The footer is
+                also
+                used for SEO purposes by providing links for quick access to popular contentw- this part
+                is
+                wrapped by <code>&lt;footer&gt;</code>.</dd>
+            </dl>
+          </section>
+        </div>
+      </article>
+      <article>
+        <div class="article__base">
+          <h2 class="article__title">
+            Meta-tags
+          </h2>
+          <section class="section__base">
+            <h3 class="section__title">
+              About
+            </h3>
+            <p class="section__text">
+              Matadata is information about the data and more exactly the <code>&lt;meta&gt;</code> tag
+              provides
+              information about the HTML document to the browser. This metadata will not be displayed on
+              the
+              page
+              but will be used by the browser, search engines and screen readers.
+            </p>
+            <p class="section__text">
+              The <code>&lt;meta&gt;</code> elements are used to specify the page description, keywords,
+              author of
+              the document, how to display the content of the webpage, take control over the viewport and
+              other
+              metadata
+            </p>
+          </section>
+          <section class="section__base">
+            <h3 class="section__title">
+              Mata-related elements
+            </h3>
+            <p>
+              There are some meta-related elements that are defined but cannot represent the
+              <code>&lt;meta&gt;</code> element: <code>&lt;base&gt;, &lt;link&gt;, &lt;script&gt;,
+                &lt;style&gt;
+                and &lt;title&gt;</code>.
+            </p>
+
+          </section>
+        </div>
+      </article>
+      <article>
+        <div class="article__base">
+          <h2 class="article__title">
+            HTML5 Validation
+          </h2>
+          <section class="section__base">
+            <h3 class="section__title">
+              What is ...
+            </h3>
+            <p class="section__text">
+              The HTML Validator/Linter is used to validate HTML files for compliance against the W3C
+              standards
+              and performs linting to assess code quality against best practices - finds missing or
+              unbalanced
+              HTML tags in the documents, stray characters, duplicate IDs, missing or invalid attributes
+              and
+              other
+              recommendations.
+            </p>
+          </section>
+        </div>
+      </article>
+      <article>
+        <div class="article__base">
+          <h2 class="article__title">
+            Understand and code according to NC Coding Conventions
+          </h2>
+          <section class="section__base">
+            <h3 class="section__title">Coding conventions:</h3>
+            <ul class="section__list">
+              <li class="section__list-item"> Always declare <code>&lt;!DOCTYPE html&gt;</code></li>
+              <li class="section__list-item"> All templates must be UTF-8 encoded</li>
+              <li class="section__list-item">Tags and attributes must always be declare using lowercase
+                character.
+              </li>
+              <li class="section__list-item">Do not write multiple elements on the same line, every
+                element
+                should
+                have its own line.</li>
+              <li class="section__list-item">Add an additional level of indentation fo each nested element
+              </li>
+              <li class="section__list-item">Use boolean attributes without values</li>
+              <li class="section__list-item">Use double quotes to quote attribute values</li>
+              <li class="section__list-item">Type attributes will be omitted for link stylesheets, style
+                and
+                script elements</li>
+              <li class="section__list-item">Always include the closing tag</li>
+              <li class="section__list-item">Because of Sightly problems always include a treiling slash
+                in
+                self-closing elements</li>
+              <li class="section__list-item">Always use alternative text for images, the only exception is
+                when
+                the image is decorative</li>
+              <li class="section__list-item">List the attribute order as it follows: class, data-*, ID,
+                everything
+                else</li>
+              <li class="section__list-item">Use HTML5 elements in a backward compatible way as it follows
+                -
+                HTML5
+                structure elements should only contain the role attribute, structure elements should not
+                be
+                used
+                for styling, structure elements should not be referenced in JavaScript,
+                <code>&lt;div&gt;</code>
+                should follow as fallback.</li>
+              <li class="section__list-item">Always add skiplinks to the document start</li>
+              <li class="section__list-item">Do not comment your HTML code, it should be ways to
+                understand
+                and
+                the documentation should be found ib the SCSS files</li>
+              <li class="section__list-item">The <code>&lt;head&gt;</code> should begin with the encoding
+                tag,
+                the
+                <code>&lt;title&gt;</code> should be next for SEO reasons and all the other meta-tags to
+                follow
+              </li>
+              <li class="section__list-item">Use IDs only for the main areas of the page, to jump to site
+                section
+                (accesibility) or as context in JavaScript - DO NOT USE IDs for styling because of
+                specificity
+                reasons</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </div>
+  </main>
+</body>
+
+</html>
