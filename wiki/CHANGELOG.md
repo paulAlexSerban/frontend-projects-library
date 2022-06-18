@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/paulAlexSerban/fe--ui-techstack-insights/compare/v1.2.0...v1.3.0) (2022-06-18)
+
+
+### Features
+
+* **html:** add html basics base content ([b3050e7](https://github.com/paulAlexSerban/fe--ui-techstack-insights/commit/b3050e74006d3d2d2852ed81fafb0673d730138f))
+
 # [1.2.0](https://github.com/paulAlexSerban/fe--ui-techstack-insights/compare/v1.1.0...v1.2.0) (2022-06-17)
 
 
