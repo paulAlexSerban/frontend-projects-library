@@ -1,3 +1,11 @@
+# [1.4.0](https://github.com/paulAlexSerban/fe--ui-techstack-insights/compare/v1.3.0...v1.4.0) (2022-06-23)
+
+
+### Features
+
+* **html-basic:** added documentation for html basics ([9f4c8f7](https://github.com/paulAlexSerban/fe--ui-techstack-insights/commit/9f4c8f76a08743a36a28381e7ded20248d85deae))
+* **lsg:** updated lsg styles as for technical docuemntation wiki ([86a5f76](https://github.com/paulAlexSerban/fe--ui-techstack-insights/commit/86a5f76194a7c76b486abfb6157a09df8fe7e5eb))
+
 # [1.3.0](https://github.com/paulAlexSerban/fe--ui-techstack-insights/compare/v1.2.0...v1.3.0) (2022-06-18)
 
 
