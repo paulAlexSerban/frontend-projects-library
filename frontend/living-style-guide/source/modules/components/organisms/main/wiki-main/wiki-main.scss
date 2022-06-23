@@ -1,0 +1,10 @@
+$type: "o";
+$block: "#{$type}-wiki-main";
+
+.#{$block} {
+  @include e("base") {
+    height: 100vh;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+}

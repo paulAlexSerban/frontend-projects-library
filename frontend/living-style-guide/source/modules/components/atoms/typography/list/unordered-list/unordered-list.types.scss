@@ -1,0 +1,11 @@
+$type: "a";
+$block: "#{$type}-unordered-list";
+
+.#{$block} {
+  @include e("base") {
+    @include m("bulleted") {
+      list-style: circle;
+      list-style-position: inside;
+    }
+  }
+}

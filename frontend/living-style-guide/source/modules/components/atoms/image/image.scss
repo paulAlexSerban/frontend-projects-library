@@ -1,0 +1,12 @@
+$cmp:  "a-image";
+
+.#{$cmp} {
+  @include e("base") {
+    max-width: $max-width / 3;
+    max-height: 300px;
+
+    @include breakpoint($tablet) {
+      max-width: $max-width / 2;
+    }
+  }
+}

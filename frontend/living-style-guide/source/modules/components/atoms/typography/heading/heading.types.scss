@@ -1,6 +1,10 @@
 $cmp: "a-heading";
 .#{$cmp} {
   @include e("base") {
+    @include m("page-title") {
+      @include font($page-title);
+    }
+
     @include m("heading-100") {
       @include font($heading-100);
     }

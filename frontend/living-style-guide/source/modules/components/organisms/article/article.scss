@@ -3,10 +3,8 @@ $block: "#{$type}-article";
 
 .#{$block} {
   @include e("base") {
-    @include font($body);
+    @extend %margin-bottom-64; /* $gutter * 4 */
 
-    padding: ($baseline * 9) ($gutter * 1.5);
-    margin: 0 auto;
-    max-width: $max-width / 2;
+    border-bottom: 1px solid fx-color($c-gray, sonic-silver);
   }
 }

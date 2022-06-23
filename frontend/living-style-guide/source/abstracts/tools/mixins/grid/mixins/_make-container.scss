@@ -4,7 +4,7 @@
 /// @param {Map} $breakpoints [$breakpoints] - A map of breakpoints where the key is the name
 
 @mixin make-container($breakpoints: $breakpoints) {
-  margin: 0 auto;
+  @extend %margin-centered;
 
   @include set-max-width-by-largest-breakpoint();
 
