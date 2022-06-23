@@ -17,4 +17,28 @@ $breakpoints: $column-grid-12;
 @import "../../layouts/sidebar-says.scss";
 
 // Import template
-@import "../../templates/generic/generic.template.scss";
+@import "../../templates/wiki/wiki.template.scss";
+
+/* html basics code - TODO - integrate in LSG */
+
+.section {
+  &__base {
+    width: 80%;
+    min-width: 400px;
+    margin: 0 auto 24px;
+    background-color: rgb(255, 255, 255);
+    padding: 16px;
+    border-left: 6px solid #a9a9a9;
+  }
+
+  &__text {
+    text-indent: 24px;
+  }
+
+  &__preformatted-text {
+    border: 1px solid #a9a9a9;
+    width: fit-content;
+    margin: auto;
+    padding: 0 16px;
+  }
+}

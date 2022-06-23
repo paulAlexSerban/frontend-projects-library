@@ -7,7 +7,7 @@
 
 $breakpoints: $column-grid-12;
 
-@import "./link.scss";
+@import "./code.scss";
 
 /* || EXTENDING ATOMIC DESIGN || https://www.cjcid.com/articles/ions-introduction */
 
@@ -15,7 +15,6 @@ $breakpoints: $column-grid-12;
   * TYPES
   * Normal Emphasized Informative Warning Alert Error Success)
 */
-@import "./link.types.scss";
 
 /**
   * STATES (states of interactive elements)
@@ -27,4 +26,3 @@ $breakpoints: $column-grid-12;
   * STATUSES
   * ::selection, :hover, -webkit-tap-highlight-color, :focus, :focus-within, :active, :link, :visited
 */
-@import "./link.statuses.scss";
