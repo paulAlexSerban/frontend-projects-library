@@ -4,15 +4,15 @@
 $breakpoints: $column-grid-12;
 
 // Base component code
-@import "./pureCssAccordion.scss";
+@import "./pure-css-accordion.scss";
 
 // TYPES (Normal Emphasized Informative Warning Alert Error Success)
 
 // STATES (states of interactive elements)
 // :default, ::placeholder, :placeholder-shown, :blank, :indeterminate, :checked, :optional,
 // :required, :disabled, :enabled, :read-write, :read-only, :valid, :invalid, :in-range, :out-of-range
-@import "./pureCssAccordion.states.scss";
+@import "./pure-css-accordion.states.scss";
 
 // STATUSES
 // ::selection, :hover, -webkit-tap-highlight-color, :focus, :focus-within, :active, :link, :visited
-@import "./pureCssAccordion.statuses.scss";
+@import "./pure-css-accordion.statuses.scss";

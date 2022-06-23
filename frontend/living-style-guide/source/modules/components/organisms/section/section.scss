@@ -3,7 +3,6 @@ $block: "#{$type}-section";
 
 .#{$block} {
   @include e("base") {
-    width: 100%;
-    margin-top: $baseline * 4;
+    @extend %margin-bottom-64; /* $gutter * 4 */
   }
 }

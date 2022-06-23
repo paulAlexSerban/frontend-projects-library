@@ -1,0 +1,7 @@
+$cmp:  "a-code";
+
+.#{$cmp} {
+  @include e("base"){
+    @include font($code);
+  }
+}

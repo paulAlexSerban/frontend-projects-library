@@ -1,0 +1,21 @@
+$cmp: "m-figure";
+
+.#{$cmp} {
+  @include e("base") {
+    @extend %margin-centered;
+    @extend %margin-bottom-16; /* $gutter */
+
+    border: thin solid fx-color($c-gray, sonic-silver);
+    display: block;
+    padding: $baseline ($gutter / 2);
+    width: fit-content;
+  }
+
+  @include e("caption") {
+    @include font($label);
+    background-color: var(--text-base-color);
+    color: #fff;
+    padding: 3px;
+    text-align: center;
+  }
+}
