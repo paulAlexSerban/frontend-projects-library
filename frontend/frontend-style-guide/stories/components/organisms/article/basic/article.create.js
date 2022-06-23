@@ -1,5 +1,3 @@
-// import "./organism.scss";
-
 // import { createHeading } from "../../../atoms/heading/basic/heading.create";
 // import { createSection } from "../../section/basic/section.create";
 
