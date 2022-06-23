@@ -5,6 +5,6 @@ $cmp: "a-paragraph";
     @include font($body);
 
     color: var(--text-base-color);
-    margin: ($baseline * 2) 0;
+    margin-bottom: $baseline * 2;
   }
 }

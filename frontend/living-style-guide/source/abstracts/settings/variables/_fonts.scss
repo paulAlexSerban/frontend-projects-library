@@ -2,31 +2,31 @@
 @import "../viewports/breakpoints.scss";
 @import "./sizes.scss";
 
-$page-hero: (
+$page-title: (
   default: (
-    --hero-font-size: convert-rem(56px),
-    --hero-line-height: convert-rem(64px),
+    --page-title-font-size: convert-rem(48px),
+    --page-title-line-height: convert-rem(58px),
     font-family: var(--text-regular),
-    font-weight: var(--font-weight-hero),
-    font-size: var(--hero-font-size),
-    line-height: var(--hero-line-height),
+    font-weight: var(--font-weight--page-title),
+    font-size: var(--page-title-font-size),
+    line-height: var(--page-title-line-height),
     letter-spacing: convert-rem(-1.5px),
   ),
   $desktop: (
-    --hero-font-size: convert-rem(90px),
-    --hero-line-height: convert-rem(90px),
+    --page-title-font-size: convert-rem(72px),
+    --page-title-line-height: convert-rem(72px),
   ),
   $ultra-wide: (
-    --hero-font-size: convert-rem(100px),
-    --hero-line-height: convert-rem(100px),
+    --page-title-font-size: convert-rem(81px),
+    --page-title-line-height: convert-rem(81px),
     letter-spacing: -0.01em,
   ),
 );
 
 $heading-100: (
   default: (
-    --heading-font-size: convert-rem(56px),
-    --heading-line-height: convert-rem(64px),
+    --heading-font-size: convert-rem(48px),
+    --heading-line-height: convert-rem(58px),
     font-family: var(--text-regular),
     font-size: var(--heading-font-size),
     line-height: var(--heading-line-height),
@@ -34,20 +34,20 @@ $heading-100: (
     letter-spacing: convert-rem(-1.5px),
   ),
   $desktop: (
-    --heading-font-size: convert-rem(90px),
-    --heading-line-height: convert-rem(90px),
+    --heading-font-size: convert-rem(72px),
+    --heading-line-height: convert-rem(72px),
   ),
   $ultra-wide: (
-    --heading-font-size: convert-rem(100px),
-    --heading-line-height: convert-rem(100px),
+    --heading-font-size: convert-rem(81px),
+    --heading-line-height: convert-rem(81px),
     letter-spacing: convert-rem(-0.01px),
   ),
 );
 
 $heading-200: (
   default: (
-    --heading-font-size: convert-rem(38px),
-    --heading-line-height: convert-rem(42px),
+    --heading-font-size: convert-rem(34px),
+    --heading-line-height: convert-rem(38px),
     font-family: var(--text-regular),
     font-size: var(--heading-font-size),
     line-height: var(--heading-line-height),
@@ -55,20 +55,20 @@ $heading-200: (
     letter-spacing: convert-rem(-0.5px),
   ),
   $desktop: (
-    --heading-font-size: convert-rem(50px),
-    --heading-line-height: convert-rem(58px),
+    --heading-font-size: convert-rem(45px),
+    --heading-line-height: convert-rem(52px),
   ),
   $ultra-wide: (
-    --heading-font-size: convert-rem(60px),
-    --heading-line-height: convert-rem(70px),
+    --heading-font-size: convert-rem(54px),
+    --heading-line-height: convert-rem(63px),
     letter-spacing: convert-rem(-0.75px),
   ),
 );
 
 $heading-300: (
   default: (
-    --heading-font-size: convert-rem(32px),
-    --heading-line-height: convert-rem(39px),
+    --heading-font-size: convert-rem(29px),
+    --heading-line-height: convert-rem(35px),
     font-family: var(--text-regular),
     font-size: var(--heading-font-size),
     line-height: var(--heading-line-height),
@@ -131,6 +131,25 @@ $body: (
     line-height: convert-rem(28px),
   ),
 );
+
+$code: (
+  default: (
+    font-family: var(--text-code),
+    font-size: convert-rem(15px),
+    line-height: convert-rem(20px),
+    font-weight: 300,
+    letter-spacing: convert-rem(0.5px),
+  ),
+  $desktop: (
+    font-size: convert-rem(17px),
+    line-height: convert-rem(24px),
+  ),
+  $ultra-wide: (
+    font-size: convert-rem(20px),
+    line-height: convert-rem(25px),
+  ),
+);
+
 
 $body-bold: (
   default: (
