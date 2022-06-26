@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/paulAlexSerban/fe--ui-techstack-insights/compare/v1.4.0...v1.5.0) (2022-06-26)
+
+
+### Features
+
+* **reactor:** refactor structure as per template ([28a1845](https://github.com/paulAlexSerban/fe--ui-techstack-insights/commit/28a184572644245e809c5688fddc3a8099f1fc2d))
+
 # [1.4.0](https://github.com/paulAlexSerban/fe--ui-techstack-insights/compare/v1.3.0...v1.4.0) (2022-06-23)
 
 
