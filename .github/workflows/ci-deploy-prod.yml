@@ -43,7 +43,7 @@ jobs:
 
       # Build ./frontend/static/technical-documentation
       - name: "🏗️  Build static/technical-documentation project"
-        run: npm run build:frontend:staticTechnicalDocumentation
+        run: npm run build:frontend:technicalDocumentation
 
       # Package ./frontend/static/technical-documentation
       - name: "📦 Package static/technical-documentation"
