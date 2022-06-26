@@ -2,13 +2,9 @@
 @import "../../../components/atoms/typography/heading/heading.scss";
 @import "../../../components/atoms/typography/paragraph/paragraph.scss";
 @import "../../../components/atoms/typography/link/link.scss";
-// @import "../../../components/atoms/badge/basic/badge.scss";
-// @import "../../../components/atoms/button/basic/button.scss";
+@import "../../../components/atoms/typography/list/unordered-list/unordered-list.scss";
 
 /*  MOLECULES  */
-// @import "../../../components/molecules/accordion/pureCssAccordion/pureCssAccordion.scss";
-// @import "../../../components/molecules/progress-steps/basic/progress-steps.basic.scss";
-// @import "../../../components/molecules/text-list/basic/text-list.basic.scss";
 
 /*  ORGANISMS  */
 @import "../../../components/organisms/article/article.scss";
@@ -23,8 +19,7 @@
 
 /* ATOMS */
 @import "../../../components/atoms/typography/heading/heading.types.scss";
-// @import "../../../components/atoms/badge/basic/badge.types.scss";
-// @import "../../../components/atoms/button/basic/button.types.scss";
+@import "../../../components/atoms/typography/list/unordered-list/unordered-list.types.scss";
 
 /*  MOLECULES  */
 
@@ -37,10 +32,8 @@
 */
 
 /* ATOMS */
-// @import "../../../components/atoms/button/basic/button.states.scss";
 
 /*  MOLECULES  */
-// @import "../../../components/molecules/accordion/pureCssAccordion/pureCssAccordion.states.scss";
 
 /*  ORGANISMS  */
 
@@ -50,11 +43,8 @@
 
 /* ATOMS */
 @import "../../../components/atoms/typography/link/link.statuses.scss";
-// @import "../../../components/atoms/badge/basic/badge.statuses.scss";
-// @import "../../../components/atoms/button/basic/button.statuses.scss";
 
 /*  MOLECULES  */
-// @import "../../../components/molecules/accordion/pureCssAccordion/pureCssAccordion.statuses.scss";
 
 /*  ORGANISMS  */
 
