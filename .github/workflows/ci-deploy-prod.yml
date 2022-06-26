@@ -1,0 +1,58 @@
+name: CI Deploy to Production
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Test and Lint
+    uses: paulAlexSerban/fe--ui-techstack-insights/.github/workflows/ci-development.yml@main
+
+  deploy:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    needs:
+      - test
+    steps:
+      # Checkout repository
+      - name: "☁️ checkout repository"
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      # Cache node_modules to speed up things
+      - name: Cache node_modules
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      
+      # Install NodeJS & npm
+      - name: "🔧 Setup NodeJS 14.19.1"
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.19.1
+
+      - name: "🔧 Install npm@latest"
+        run: npm i -g npm@latest
+
+      # Install ./frontend/static/technical-documentation dependencies
+      - name: "📦  Install Static Technical Documentation dependencies"
+        run: npm --prefix frontend/static/technical-documentation install
+
+      # Build ./frontend/static/technical-documentation
+      - name: "🏗️  Build static/technical-documentation project"
+        run: npm run build:frontend:staticTechnicalDocumentation
+
+      # Package ./frontend/static/technical-documentation
+      - name: "📦 Package static/technical-documentation"
+        run: "npm run package:static:technical-documentation"
+
+      # Deploy ./frontend/static/technical-documentation to GitHub pages
+      - name: Deploy static/technical-documentation to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages-static-technical-documentation
+          folder: docs/static/technical-documentation
+

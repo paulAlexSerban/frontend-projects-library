@@ -1,4 +1,4 @@
-# Front-end UI Tech Stack Insights
+# Front-end UI Tech-stack Insights
 
 ## About
 
@@ -14,13 +14,18 @@
 
 ### File structure
 
-- File Structure based on `paulAlexSerban/tpl--basic-prj@1`
-- removed Wordpress and React related scripts
+- File Structure based on `paulAlexSerban/pbanf@^1.0.0`
+
+## Start Development
+- `npm run install:root` - install root devDependencies
+- `npm run install:all` - install all build dependencies in all sub-projects
+- `npm run lint:all` - lint code
+- `npm run test:all` - test code
+- `npm run build:all` - build all sub-projects
+- `npm run start:compose:all` - start docker compose containers
+- `npm run test:containers` - test all docker containers with curl for response
 
 ## Useful Local Development URLs
 
 - [traefik dashboard](http://localhost:8080/dashboard)
-  - [error page middleware](http://error-ui-techstack-insights.localhost/)
-- [whoami](https://whoami-ui-techstack-insights.localhost/)
-- [frontend style guide](https://frontend-style-guide-ui-techstack-insights.localhost/)
-- [static-prototype](https://prototype-ui-techstack-insights.localhost/)
+- [technical-documentation](https://technical-documentation-ui-techstack-insights.localhost/)
