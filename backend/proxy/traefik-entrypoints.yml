@@ -29,10 +29,24 @@ experimental:
 entryPoints:
   web:
     address: ":80"
+    http:
+      redirections:
+        entryPoint:
+          to: websecure
+          scheme: https
   websecure:
     address: ":443"
+    http:
+      tls:
+        certResolver: leresolver
     http3:
       advertisedPort: "443"
+  # streaming:
+  #   address: ":1704/udp"
+  # tcpep:
+  #   address: ":3179"
+  # udpep:
+  #   address: ":3179/udp"
 
 ################################################################
 # Challenge HTTP
