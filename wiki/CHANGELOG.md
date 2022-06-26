@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/paulAlexSerban/fe--ui-techstack-insights/compare/v1.5.1...v1.5.2) (2022-06-26)
+
+
+### Bug Fixes
+
+* **deploy:** package script updated ([51e285c](https://github.com/paulAlexSerban/fe--ui-techstack-insights/commit/51e285cc0f5100e336603151669ef95b4c43ca79))
+
 ## [1.5.1](https://github.com/paulAlexSerban/fe--ui-techstack-insights/compare/v1.5.0...v1.5.1) (2022-06-26)
 
 

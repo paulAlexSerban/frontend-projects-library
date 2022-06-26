@@ -1,6 +1,6 @@
 {
   "name": "fe--ui-techstack-insights",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,7 @@
     "stop:compose:all": "bash package-scripts.bash stopComposeAll",
     "stop:compose:proxy": "bash package-scripts.bash stopComposeProxy",
     "stop:compose:technicalDocumentation": "bash package-scripts.bash stopStaticTechnicalDocumentation",
-    "📦  🟢  📦  🟢  📦  🟢 ":"PACKAGE",
+    "📦  🟢  📦  🟢  📦  🟢 ": "PACKAGE",
     "package:clean": "rm -rfv ./docs",
     "package:static:technical-documentation": "npm run package:clean && mkdir -p docs/static/technical-documentation && cp -rfv frontend/static/technical-documentation/dist/* ./docs/static/technical-documentation"
   },
