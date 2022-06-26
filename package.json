@@ -32,7 +32,10 @@
     "🛑  🐳  🛑  🐳": "STOP - Docker Compose",
     "stop:compose:all": "bash package-scripts.bash stopComposeAll",
     "stop:compose:proxy": "bash package-scripts.bash stopComposeProxy",
-    "stop:compose:technicalDocumentation": "bash package-scripts.bash stopStaticTechnicalDocumentation"
+    "stop:compose:technicalDocumentation": "bash package-scripts.bash stopStaticTechnicalDocumentation",
+    "📦  🟢  📦  🟢  📦  🟢 ":"PACKAGE",
+    "package:clean": "rm -rfv ./docs",
+    "package:static:technical-documentation": "npm run package:clean && mkdir -p docs/static/technical-documentation && cp -rfv frontend/static/technical-documentation/dist/* ./docs/static/technical-documentation"
   },
   "author": "",
   "license": "ISC",
