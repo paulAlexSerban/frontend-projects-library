@@ -1,0 +1,18 @@
+$cmp: "a-heading";
+
+.#{$cmp} {
+  @include e("subheading") {
+    .a-heading__base--heading-100 &,
+    .a-heading__base--heading-200 &,
+    .a-heading__base--heading-300 &,
+    .a-heading__base--heading-400 {
+      font-size: calc(var(--heading-font-size) * 0.7);
+      line-height: calc(var(--heading-line-height) * 0.75);
+    }
+
+    .a-heading__base--page-title & {
+      font-size: calc(var(--page-title-font-size) * 0.7);
+      line-height: calc(var(--page-title-line-height) * 0.75);
+    }
+  }
+}

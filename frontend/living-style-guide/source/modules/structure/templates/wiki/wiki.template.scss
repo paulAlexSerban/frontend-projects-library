@@ -12,10 +12,11 @@
 
 /*  ORGANISMS  */
 @import "../../../components/organisms/header/header.scss";
+@import "../../../components/organisms/footer/footer.scss";
 @import "../../../components/organisms/main/wiki-main/wiki-main.scss";
 @import "../../../components/organisms/article/article.scss";
 @import "../../../components/organisms/section/section.scss";
-@import "../../../components/organisms/navigation/fixed-wiki-navigation/fixed-wiki-navigation.scss";
+@import "../../../components/organisms/navigation/side-navigation/side-navigation.scss";
 
 /* || EXTENDING ATOMIC DESIGN || https://www.cjcid.com/articles/ions-introduction */
 
@@ -32,6 +33,7 @@
 /*  MOLECULES  */
 
 /*  ORGANISMS  */
+@import "../../../components/organisms/header/header.types.scss";
 
 /**
   * STATES (states of interactive elements)
@@ -55,6 +57,18 @@
 /*  MOLECULES  */
 
 /*  ORGANISMS  */
+
+/**
+  * SIBLINGS
+  * descendant, adjacent, general, child
+*/
+
+/* ATOMS */
+
+/*  MOLECULES  */
+
+/*  ORGANISMS  */
+@import "../../../components/atoms/typography/list/unordered-list/unordered-list.siblings.scss";
 
 /* High Specificity Rules */
 // @import "../../../utilities/utilities.scss";

@@ -1,0 +1,8 @@
+$type: "o";
+$block: "#{$type}-navigation-bar";
+
+.#{$block} {
+  @include e("base") {
+    border-bottom: 1px solid fx-color($c-gray, sonic-silver);
+  }
+}

@@ -1,14 +1,19 @@
 /*  ATOMS  */
 @import "../../../components/atoms/typography/heading/heading.scss";
 @import "../../../components/atoms/typography/paragraph/paragraph.scss";
+@import "../../../components/atoms/typography/time/time.scss";
 @import "../../../components/atoms/typography/link/link.scss";
 @import "../../../components/atoms/typography/list/unordered-list/unordered-list.scss";
 
 /*  MOLECULES  */
+@import "../../../components/molecules/address/address.scss";
 
 /*  ORGANISMS  */
+@import "../../../components/organisms/header/header.scss";
+@import "../../../components/organisms/footer/footer.scss";
 @import "../../../components/organisms/article/article.scss";
-@import "../../../components/organisms/section/section.scss";
+@import "../../../components/organisms/navigation/navigation-bar/navigation-bar.scss";
+@import "../../../components/organisms/post/post.scss";
 
 /* || EXTENDING ATOMIC DESIGN || https://www.cjcid.com/articles/ions-introduction */
 
@@ -24,6 +29,7 @@
 /*  MOLECULES  */
 
 /*  ORGANISMS  */
+@import "../../../components/organisms/header/header.types.scss";
 
 /**
   * STATES (states of interactive elements)
@@ -48,6 +54,19 @@
 
 /*  ORGANISMS  */
 
-/* High Specificity Rules */
+/**
+  * SIBLINGS
+  * descendant, adjacent, general, child
+*/
+
+/*  ATOMS  */
+@import "../../../components/atoms/typography/heading/heading.siblings.scss";
+
+/*  MOLECULES  */
+
+/*  ORGANISMS  */
+@import "../../../components/organisms/navigation/navigation-bar/navigation-bar.siblings.scss";
+
+/* HIGH SPECIFICATION RULES */
 // @import "../../../utilities/utilities.scss";
 // @import "../../../trumps/trumps.scss";

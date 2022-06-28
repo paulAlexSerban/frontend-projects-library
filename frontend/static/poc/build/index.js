@@ -6,8 +6,8 @@ import { lintHtml } from "./tasks/lintHtml";
 import { processHtml } from "./tasks/processHtml";
 
 import { compileScssPages } from "./tasks/compileScssPages";
-import { compileScssLayers } from "./tasks/compileScssLayers";
-import { compileScssComponents } from "./tasks/compileScssComponents";
+// import { compileScssLayers } from "./tasks/compileScssLayers";
+// import { compileScssComponents } from "./tasks/compileScssComponents";
 
 import { transpileJavaScriptPages } from "./tasks/transpileJavaScriptPages";
 // import { minifyCss } from "./tasks/minifyCss";
@@ -25,7 +25,7 @@ task("process:html", series(lintHtml, processHtml));
 
 task(
   "compile:styles",
-  series(compileScssPages, compileScssLayers, compileScssComponents)
+  series(compileScssPages)
 );
 
 task("transpile:javascript", series(transpileJavaScriptPages));

@@ -15,6 +15,7 @@ $breakpoints: $column-grid-12; /* 1 */
   * TYPES
   * Normal Emphasized Informative Warning Alert Error Success)
 */
+@import "./header.types.scss";
 
 /**
   * STATES (states of interactive elements)

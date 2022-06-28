@@ -7,7 +7,7 @@
 
 $breakpoints: $column-grid-12; /* 1 */
 
-@import "./fixed-wiki-navigation.scss"; /* 2 */
+@import "./navigation-bar.scss"; /* 2 */
 
 /* || EXTENDING ATOMIC DESIGN || https://www.cjcid.com/articles/ions-introduction */
 
@@ -26,3 +26,9 @@ $breakpoints: $column-grid-12; /* 1 */
   * STATUSES
   * ::selection, :hover, -webkit-tap-highlight-color, :focus, :focus-within, :active, :link, :visited
 */
+
+/**
+  * SIBLINGS
+  * descendant, adjacent, general, child
+*/
+@import "./navigation-bar.siblings.scss";

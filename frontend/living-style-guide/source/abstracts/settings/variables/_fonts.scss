@@ -132,6 +132,63 @@ $body: (
   ),
 );
 
+$body-bold: (
+  default: (
+    font-family: var(--text-regular),
+    font-size: convert-rem(17px),
+    line-height: convert-rem(23px),
+    font-weight: 700,
+  ),
+  $desktop: (
+    font-size: convert-rem(19px),
+    line-height: convert-rem(27px),
+  ),
+  $ultra-wide: (
+    font-size: convert-rem(20px),
+    line-height: convert-rem(28px),
+  ),
+);
+
+$body-small: (
+  default: (
+    font-family: var(--text-regular),
+    font-size: convert-rem(14px),
+    font-weight: 400,
+    line-height: convert-rem(22px),
+    letter-spacing: 0.005em,
+  ),
+  $desktop: (
+    font-size: convert-rem(16px),
+    line-height: convert-rem(22px),
+    letter-spacing: 0.008em,
+  ),
+  $ultra-wide: (
+    font-size: convert-rem(18px),
+    line-height: convert-rem(24px),
+    letter-spacing: 0.005em,
+  ),
+);
+
+$body-large: (
+  default: (
+    font-family: var(--text-regular),
+    font-size: convert-rem(19px),
+    font-weight: 400,
+    line-height: convert-rem(27px),
+    letter-spacing: 0.005em,
+  ),
+  $desktop: (
+    font-size: convert-rem(23px),
+    line-height: convert-rem(30px),
+    letter-spacing: 0.008em,
+  ),
+  $ultra-wide: (
+    font-size: convert-rem(25px),
+    line-height: convert-rem(32px),
+    letter-spacing: 0.005em,
+  ),
+);
+
 $code: (
   default: (
     font-family: var(--text-code),
@@ -147,24 +204,6 @@ $code: (
   $ultra-wide: (
     font-size: convert-rem(20px),
     line-height: convert-rem(25px),
-  ),
-);
-
-
-$body-bold: (
-  default: (
-    font-family: var(--text-regular),
-    font-size: convert-rem(17px),
-    line-height: convert-rem(23px),
-    font-weight: 700,
-  ),
-  $desktop: (
-    font-size: convert-rem(19px),
-    line-height: convert-rem(27px),
-  ),
-  $ultra-wide: (
-    font-size: convert-rem(20px),
-    line-height: convert-rem(28px),
   ),
 );
 
@@ -314,25 +353,5 @@ $blockquote: (
     font-size: convert-rem(40px),
     line-height: convert-rem(60px),
     letter-spacing: 0,
-  ),
-);
-
-$body-large: (
-  default: (
-    font-family: var(--text-regular),
-    font-size: convert-rem(19px),
-    font-weight: 400,
-    line-height: convert-rem(27px),
-    letter-spacing: 0.005em,
-  ),
-  $desktop: (
-    font-size: convert-rem(23px),
-    line-height: convert-rem(30px),
-    letter-spacing: 0.008em,
-  ),
-  $ultra-wide: (
-    font-size: convert-rem(25px),
-    line-height: convert-rem(32px),
-    letter-spacing: 0.005em,
   ),
 );

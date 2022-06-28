@@ -28,4 +28,4 @@
 ## Useful Local Development URLs
 
 - [traefik dashboard](http://localhost:8080/dashboard)
-- [technical-documentation](https://technical-documentation-ui-techstack-insights.localhost/)
+- [poc](https://poc-ui-techstack-insights.localhost/)

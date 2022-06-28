@@ -7,10 +7,10 @@ function startComposeProxy() {
     up --detach --build
 }
 
-function startStaticTechnicalDocumentation () {
+function startStaticPoc () {
     docker compose --env-file config.env \
     --file docker/docker-compose.proxy.yml \
-    --file docker/docker-compose.technical-documentation.yml \
+    --file docker/docker-compose.poc.yml \
     up --detach --build
 }
 
@@ -30,8 +30,8 @@ function testCurlTraefikContainer() {
   docker run --network container:traefik appropriate/curl -s --retry 10 --retry-connrefused http://localhost:8080/dashboard
 }
 
-function testCurlTechnicalDocumentationContainer() {
-  docker run --network container:technical-documentation appropriate/curl -s --retry 10 --retry-connrefused http://technical-documentation
+function testCurlPocContainer() {
+  docker run --network container:poc appropriate/curl -s --retry 10 --retry-connrefused http://poc
 }
 
 function testLivingStyleGuide() {
@@ -46,15 +46,15 @@ function stopComposeProxy() {
     down --volumes --rmi all
 }
 
-function stopStaticTechnicalDocumentation() {
+function stopStaticPoc() {
   docker compose --env-file config.env \
-    --file docker/docker-compose.technical-documentation.yml \
+    --file docker/docker-compose.poc.yml \
     down --volumes --rmi all
 }
 
 function stopComposeAll() {
     docker compose --env-file config.env \
-    --file docker/docker-compose.technical-documentation.yml \
+    --file docker/docker-compose.poc.yml \
     --file docker/docker-compose.proxy.yml \
     down --volumes --rmi all
     docker container prune -f
@@ -67,8 +67,8 @@ function installSubPrjDevDependencies () {
   npm --prefix frontend/living-style-guide install
   echo "🔧  Installing JS Component Library 🔧 " 
   npm --prefix frontend/js-component-library install
-  echo "🔧  Installing Static Technical Documentation 🔧 " 
-  npm --prefix frontend/static/technical-documentation install
+  echo "🔧  Installing Static Proof Of Concept 🔧 " 
+  npm --prefix frontend/static/poc install
 }
 
 $1

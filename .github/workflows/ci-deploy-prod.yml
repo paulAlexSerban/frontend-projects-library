@@ -37,22 +37,22 @@ jobs:
       - name: "🔧 Install npm@latest"
         run: npm i -g npm@latest
 
-      # Install ./frontend/static/technical-documentation dependencies
-      - name: "📦  Install Static Technical Documentation dependencies"
-        run: npm --prefix frontend/static/technical-documentation install
+      # Install ./frontend/static/poc dependencies
+      - name: "📦  Install Static Proof Of Concept dependencies"
+        run: npm --prefix frontend/static/poc install
 
-      # Build ./frontend/static/technical-documentation
-      - name: "🏗️  Build static/technical-documentation project"
-        run: npm run build:frontend:technicalDocumentation
+      # Build ./frontend/static/poc
+      - name: "🏗️  Build static/poc project"
+        run: npm run build:frontend:poc
 
-      # Package ./frontend/static/technical-documentation
-      - name: "📦 Package static/technical-documentation"
-        run: "npm run package:static:technical-documentation"
+      # Package ./frontend/static/poc
+      - name: "📦 Package static/poc"
+        run: "npm run package:static:poc"
 
-      # Deploy ./frontend/static/technical-documentation to GitHub pages
-      - name: Deploy static/technical-documentation to GitHub Pages
+      # Deploy ./frontend/static/poc to GitHub pages
+      - name: Deploy static/poc to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          branch: gh-pages-static-technical-documentation
-          folder: docs/static/technical-documentation
+          branch: gh-pages-static-poc
+          folder: docs/static/poc
 

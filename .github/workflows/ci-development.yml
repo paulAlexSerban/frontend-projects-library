@@ -169,15 +169,15 @@ jobs:
               docker/*.proxy.yml
               backend/proxy/*
       
-      # Verify if there were changes in ./docker/*.technical-documentation.yml or ./frontend/static/technical-documentation/*.Dockerfile
-      - name: "🔍  Verify Changed ./docker/*.technical-documentation.yml or ./frontend/static/technical-documentation/*.Dockerfile file"
+      # Verify if there were changes in ./docker/*.poc.yml or ./frontend/static/poc/*.Dockerfile
+      - name: "🔍  Verify Changed ./docker/*.poc.yml or ./frontend/static/poc/*.Dockerfile file"
         if: steps.changed-docker.outputs.any_changed == 'true'
         uses: tj-actions/changed-files@v23.1
-        id: changed-docker-technical-documentation
+        id: changed-docker-poc
         with:
           files: |
-              docker/*.technical-documentation.yml
-              frontend/static/technical-documentation/*.Dockerfile
+              docker/*.poc.yml
+              frontend/static/poc/*.Dockerfile
 
       # Cache node_modules to speed up things if there were changes in ./docker or *.Dockerfile
       - name: "Cache node_modules"
@@ -215,10 +215,10 @@ jobs:
         if: steps.changed-docker-proxy.outputs.any_changed == 'true'
         run: npm run start:compose:proxy
 
-      # Start Docker technical-documentation container if there are changes detected
-      - name: "🐳  Start Docker Technical Documentation Container"
-        if: steps.changed-docker-technical-documentation.outputs.any_changed == 'true'
-        run: npm run start:compose:technicalDocumentation
+      # Start Docker poc container if there are changes detected
+      - name: "🐳  Start Docker Proof Of Concept Container"
+        if: steps.changed-docker-poc.outputs.any_changed == 'true'
+        run: npm run start:compose:poc
   
       - name: "🧪  Check running containers"
         if: steps.changed-docker.outputs.any_changed == 'true'
@@ -229,7 +229,7 @@ jobs:
         if: steps.changed-docker-proxy.outputs.any_changed == 'true'
         run: npm run test:container:proxy
 
-      # TEST - Curl Technical Documentation
-      - name: "🧪  TEST - Curl Technical Documentation running container"
-        if: steps.changed-docker-technical-documentation.outputs.any_changed == 'true'
-        run: npm run test:container:technical-documentation
+      # TEST - Curl Proof Of Concept
+      - name: "🧪  TEST - Curl Proof Of Concept running container"
+        if: steps.changed-docker-poc.outputs.any_changed == 'true'
+        run: npm run test:container:poc

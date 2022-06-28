@@ -4,9 +4,6 @@ $block: "#{$type}-header";
 .#{$block} {
   @include e("base") {
     @include flex($main: space-between);
-    @extend %margin-bottom-64; /* $gutter * 4 */
-
-    border-bottom: 1px solid fx-color($c-gray, sonic-silver);
   }
 }
 
