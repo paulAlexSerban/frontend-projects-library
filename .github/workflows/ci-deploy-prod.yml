@@ -37,9 +37,13 @@ jobs:
       - name: "🔧 Install npm@latest"
         run: npm i -g npm@latest
 
+      # Install ./assets dependencies
+
       # Install ./frontend/static/poc dependencies
       - name: "📦  Install Static Proof Of Concept dependencies"
         run: npm --prefix frontend/static/poc install
+
+      # Build ./assets
 
       # Build ./frontend/static/poc
       - name: "🏗️  Build static/poc project"

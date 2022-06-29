@@ -1,4 +1,5 @@
 /*  ATOMS  */
+@import "../../../components/atoms/typography/blockquote/blockquote.scss";
 @import "../../../components/atoms/typography/heading/heading.scss";
 @import "../../../components/atoms/typography/paragraph/paragraph.scss";
 @import "../../../components/atoms/typography/time/time.scss";
@@ -60,6 +61,7 @@
 *********************************************************************************************************/
 
 /*  ATOMS  */
+@import "../../../components/atoms/typography/blockquote/blockquote.siblings.scss";
 @import "../../../components/atoms/typography/heading/heading.siblings.scss";
 
 /*  MOLECULES  */

@@ -63,6 +63,8 @@ function stopComposeAll() {
 # INSTALL
 
 function installSubPrjDevDependencies () {
+  echo "🔧  Installing Assets 🔧 " 
+  npm --prefix assets install
   echo "🔧  Installing Living Style Guide 🔧 " 
   npm --prefix frontend/living-style-guide install
   echo "🔧  Installing JS Component Library 🔧 " 

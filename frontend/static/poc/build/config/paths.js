@@ -1,5 +1,8 @@
 export const paths = {
   src: {
+    assets: {
+      assetFiles: ["../../../assets/dist/**/*"]
+    },
     meta: {
       metaFiles: "./source/meta/*"
     },

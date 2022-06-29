@@ -1,5 +1,3 @@
-</html>
-
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
@@ -16,8 +14,13 @@
   <meta property="og:image" content="TODO - og:image" />
 
   <link rel="icon" href="/favicon.ico" sizes="any" />
-  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="icon.png" />
+  <link rel="icon" href="/assets/icons/favicon-32x32.png"  sizes="32x32" type="image/png" />
+  <link rel="icon" href="/assets/icons/favicon-16x16.png" sizes="16x16" type="image/png" />
+  <link rel="icon" href="/assets/svgs/hammer.svg" type="image/svg+xml" />
+  <link rel="shortcut icon" href="/assets/icons/favicon-32x32.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="mask-icon" href="/assets/svgs/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#2d89ef" />
 
   <!-- Critical Stylesheets - START -->
   <link rel="stylesheet" href="./css/pages/index.page.css" />
@@ -27,11 +30,13 @@
   <meta name="theme-color" content="#fafafa" />
 </head>
 
-<body class="grid" data-page="page-type" data-template="template">
+<body class="grid" data-page="index" data-template="template">
   <header class="o-header__base row">
-    <h1 class="a-heading__base a-heading__base--page-title a-heading__base--is-center-aligned">
-      <span class="a-heading__main">Front-end UI Tech-stack Insights</span>
-    </h1>
+    <div class="o-header__content col">
+      <h1 class="a-heading__base a-heading__base--page-title a-heading__base--is-center-aligned">
+        <span class="a-heading__main">Front-end UI Tech-stack Insights</span>
+      </h1>
+    </div>
   </header>
 
   <main class="o-main__base row">
@@ -41,18 +46,18 @@
       </h2>
 
       <div class="o-article__content row">
-        <section class="o-section__base col-smartphone-4 col-tablet-4 u-border-right">
+        <section class="o-section__base col-smartphone-4 col-tablet-4 ">
           <h3 class="a-heading__base a-heading__base--heading-300">HTML</h3>
           <ul class="a-unordered-list__base">
             <li class="a-unordered-list__item">
-              <a class="a-link__base" href="./html-basic.html" target="_self" rel="noopener">HTML - Basic</a>
+              <a class="a-link__base" href="./wiki-html-basic.html" target="_self" rel="noopener">HTML - Basic</a>
               <ul class="a-unordered-list__base a-unordered-list__base--bulleted">
                 <li class="a-unordered-list__item">
                   <a class="a-link__base" href="./demo-html-basic.html" target="_self" rel="noopener">(demo): HTML -
                     Basic</a>
                 </li>
                 <li class="a-unordered-list__item">
-                  <a class="a-link__base" href="./tribute-page.html" target="_self" rel="noopener">(demo): Tribute
+                  <a class="a-link__base" href="./demo-tribute-page.html" target="_self" rel="noopener">(demo): Tribute
                     Page</a>
                 </li>
               </ul>
@@ -65,7 +70,7 @@
                 rel="noopener">HTML - Interview</a></li>
           </ul>
         </section>
-        <section class="o-section__base col-smartphone-4 col-tablet-4 u-border-right">
+        <section class="o-section__base col-smartphone-4 col-tablet-4 ">
           <h3 class="a-heading__base a-heading__base--heading-300">CSS</h3>
         </section>
         <section class="o-section__base col-smartphone-4 col-tablet-4">
@@ -80,7 +85,7 @@
         <span class="a-heading__main">Concepts</span>
       </h2>
       <div class="o-article__content row">
-        <section class="o-section__base col-smartphone-4 col-tablet-4 u-border-right">
+        <section class="o-section__base col-smartphone-4 col-tablet-4 ">
           <h3 class="a-heading__base a-heading__base--heading-300">
             <span class="a-heading__main">Responsive Web Design</span>
           </h3>
@@ -89,7 +94,7 @@
           </ul>
         </section>
 
-        <section class="o-section__base col-smartphone-4 col-tablet-4 u-border-right">
+        <section class="o-section__base col-smartphone-4 col-tablet-4 ">
           <h3 class="a-heading__base a-heading__base--heading-300">
             <span class="a-heading__main">Web Accessibility</span>
           </h3>
@@ -115,7 +120,7 @@
         <span class="a-heading__main">Patterns</span>
       </h2>
       <div class="o-article__content row">
-        <section class="o-section__base col-smartphone-4 col-tablet-4 u-border-right">
+        <section class="o-section__base col-smartphone-4 col-tablet-4 ">
           <h3 class="a-heading__base a-heading__base--heading-300">
             <span class="a-heading__main">Layout Patterns</span>
           </h3>
@@ -142,7 +147,7 @@
         <address class="m-address__base col-smartphone-4 col-tablet-4">
           <ul class="a-unordered-list__base">
             <li class="a-unordered-list__item">
-              <a class="a-link__base" href="mailto:paul.alex.serban@example.com">📧 paul.alex.serban@example.com</a>
+              <a class="a-link__base" href="mailto:paul.alex.serban@gmail.com">📧 paul.alex.serban@gmail.com</a>
             </li>
           </ul>
         </address>
@@ -155,6 +160,7 @@
 
     <p class="o-footer__copyright col-smartphone-4">Copyright &copy; Paul Serban 2022</p>
   </footer>
+
 </body>
 
 <script src="javascript/pages/index.page.js" async defer></script>

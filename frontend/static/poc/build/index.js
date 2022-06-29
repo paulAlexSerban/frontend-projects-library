@@ -4,7 +4,7 @@ import { clean } from "./tasks/clean";
 
 import { lintHtml } from "./tasks/lintHtml";
 import { processHtml } from "./tasks/processHtml";
-
+import { processAssets } from "./tasks/processAssets";
 import { processMetaFiles } from "./tasks/processMetaFiles";
 
 import { compileScssPages } from "./tasks/compileScssPages";
@@ -19,25 +19,15 @@ import { transpileJavaScriptPages } from "./tasks/transpileJavaScriptPages";
 // ---------------------------------------------------------------------
 
 task("clean", clean);
-
 task("lint:html", lintHtml);
 task("lint", parallel("lint:html"));
-
 // task("test:scss", testScss);
 // task("test:scripts", testsScripts);
 // task("test", parallel("test:scss", "test:scripts"));
-
+task("process:assets", series(processAssets));
 task("process:html", series(lintHtml, processHtml, processMetaFiles));
-
 task("compile:styles", series(compileScssPages));
-
 task("transpile:javascript", series(transpileJavaScriptPages));
-
-task(
-  "build:assets",
-  parallel("process:html", "compile:styles", "transpile:javascript")
-);
-
 // task("minify:styles", minifyCss);
 // task("minify:javaScript", minifyJavaScript)
 // task("minify", parallel("minify:styles", "minify:javaScript"));
@@ -46,7 +36,7 @@ task(
 // | Main tasks                                                        |
 // ---------------------------------------------------------------------
 
-task("build", series("clean", "build:assets"));
+task("build", series("clean", parallel("process:assets", "process:html", "compile:styles", "transpile:javascript")));
 
 task("watch", () => {
   watch(paths.src.html.htmlFiles, series("process:html"));
