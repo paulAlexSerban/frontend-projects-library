@@ -2,10 +2,6 @@ $type: "o";
 $block: "#{$type}-footer";
 
 .#{$block} {
-  @include e("base") {
-    @include flex($direction: column);
-  }
-
   @include e("container") {
     @extend %margin-bottom-32;
   }

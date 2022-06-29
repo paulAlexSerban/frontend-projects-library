@@ -5,12 +5,18 @@ import { clean } from "./tasks/clean";
 import { lintHtml } from "./tasks/lintHtml";
 import { processHtml } from "./tasks/processHtml";
 
+import { processMetaFiles } from "./tasks/processMetaFiles";
+
 import { compileScssPages } from "./tasks/compileScssPages";
 // import { compileScssLayers } from "./tasks/compileScssLayers";
 // import { compileScssComponents } from "./tasks/compileScssComponents";
 
 import { transpileJavaScriptPages } from "./tasks/transpileJavaScriptPages";
 // import { minifyCss } from "./tasks/minifyCss";
+
+// ---------------------------------------------------------------------
+// | Helper tasks                                                      |
+// ---------------------------------------------------------------------
 
 task("clean", clean);
 
@@ -21,20 +27,24 @@ task("lint", parallel("lint:html"));
 // task("test:scripts", testsScripts);
 // task("test", parallel("test:scss", "test:scripts"));
 
-task("process:html", series(lintHtml, processHtml));
+task("process:html", series(lintHtml, processHtml, processMetaFiles));
 
-task(
-  "compile:styles",
-  series(compileScssPages)
-);
+task("compile:styles", series(compileScssPages));
 
 task("transpile:javascript", series(transpileJavaScriptPages));
 
-task("build:assets", parallel("process:html", "compile:styles", "transpile:javascript"));
+task(
+  "build:assets",
+  parallel("process:html", "compile:styles", "transpile:javascript")
+);
 
 // task("minify:styles", minifyCss);
 // task("minify:javaScript", minifyJavaScript)
 // task("minify", parallel("minify:styles", "minify:javaScript"));
+
+// ---------------------------------------------------------------------
+// | Main tasks                                                        |
+// ---------------------------------------------------------------------
 
 task("build", series("clean", "build:assets"));
 

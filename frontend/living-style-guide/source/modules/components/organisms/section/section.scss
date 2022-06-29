@@ -3,6 +3,7 @@ $block: "#{$type}-section";
 
 .#{$block} {
   @include e("base") {
-    @extend %margin-bottom-64; /* $baseline * 8 */
+    @include flex($direction: column, $main: flex-start, $cross: flex-start);
+    @extend %margin-bottom-64;
   }
 }

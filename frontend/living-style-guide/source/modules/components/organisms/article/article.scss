@@ -3,10 +3,11 @@ $block: "#{$type}-article";
 
 .#{$block} {
   @include e("base") {
-    @extend %margin-bottom-64; /* $baseline * 8 */
+    @extend %margin-bottom-64;
+    @extend %border-bottom-solid-silver;
+  }
 
-    &:not(:last-child) {
-      border-bottom: 1px solid fx-color($c-gray, sonic-silver);
-    }
+  @include e("content") {
+    align-items: stretch;
   }
 }

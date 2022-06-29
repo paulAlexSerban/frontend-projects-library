@@ -20,10 +20,10 @@
 
 /* || EXTENDING ATOMIC DESIGN || https://www.cjcid.com/articles/ions-introduction */
 
-/**
+/**********************************************************************************************************
   * TYPES
   * Normal Emphasized Informative Warning Alert Error Success)
-*/
+**********************************************************************************************************/
 
 /* ATOMS */
 @import "../../../components/atoms/typography/heading/heading.types.scss";
@@ -33,13 +33,12 @@
 /*  MOLECULES  */
 
 /*  ORGANISMS  */
-@import "../../../components/organisms/header/header.types.scss";
 
-/**
+/**********************************************************************************************************
   * STATES (states of interactive elements)
   * :default, ::placeholder, :placeholder-shown, :blank, :indeterminate, :checked, :optional
   * :required, :disabled, :enabled, :read-write, :read-only, :valid, :invalid, :in-range, :out-of-range
-*/
+**********************************************************************************************************/
 
 /* ATOMS */
 
@@ -47,9 +46,10 @@
 
 /*  ORGANISMS  */
 
-/** STATUSES
+/********************************************************************************************************** 
+  * STATUSES
   * ::selection, :hover, -webkit-tap-highlight-color, :focus, :focus-within, :active, :link, :visited
-*/
+**********************************************************************************************************/
 
 /* ATOMS */
 @import "../../../components/atoms/typography/link/link.statuses.scss";
@@ -58,16 +58,17 @@
 
 /*  ORGANISMS  */
 
-/**
+/********************************************************************************************************
   * SIBLINGS
   * descendant, adjacent, general, child
-*/
+*********************************************************************************************************/
 
 /* ATOMS */
 
 /*  MOLECULES  */
 
 /*  ORGANISMS  */
+@import "../../../components/organisms/header/header.siblings.scss";
 @import "../../../components/atoms/typography/list/unordered-list/unordered-list.siblings.scss";
 
 /* High Specificity Rules */

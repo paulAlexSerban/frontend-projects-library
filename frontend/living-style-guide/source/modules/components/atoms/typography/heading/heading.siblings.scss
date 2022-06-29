@@ -1,6 +1,12 @@
 $cmp: "a-heading";
 
 .#{$cmp} {
+  @include e("base") {
+    .o-article__base > & {
+      @extend %margin-bottom-64;
+    }
+  }
+
   @include e("subheading") {
     .a-heading__base--heading-100 &,
     .a-heading__base--heading-200 &,
