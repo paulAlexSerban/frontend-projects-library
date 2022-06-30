@@ -1,0 +1,14 @@
+$type: "o";
+$block: "#{$type}-header";
+
+.#{$block} {
+  @include e("base") {
+
+    body > & {
+      @extend %padding-top-32;
+      @extend %padding-bottom-32;
+      @extend %margin-bottom-64;
+      @extend %border-bottom-solid-silver;
+    }
+  }
+}

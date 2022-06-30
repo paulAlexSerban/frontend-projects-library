@@ -67,8 +67,8 @@ $heading-200: (
 
 $heading-300: (
   default: (
-    --heading-font-size: convert-rem(29px),
-    --heading-line-height: convert-rem(35px),
+    --heading-font-size: convert-rem(27px),
+    --heading-line-height: convert-rem(33px),
     font-family: var(--text-regular),
     font-size: var(--heading-font-size),
     line-height: var(--heading-line-height),
@@ -76,14 +76,14 @@ $heading-300: (
     letter-spacing: 0,
   ),
   $desktop: (
-    --heading-font-size: convert-rem(44px),
-    --heading-line-height: convert-rem(54px),
+    --heading-font-size: convert-rem(33px),
+    --heading-line-height: convert-rem(39px),
     line-height: 54px,
     letter-spacing: convert-rem(0.75px),
   ),
   $ultra-wide: (
-    --heading-font-size: convert-rem(50px),
-    --heading-line-height: convert-rem(54px),
+    --heading-font-size: convert-rem(39px),
+    --heading-line-height: convert-rem(45px),
     line-height: 58px,
     letter-spacing: convert-rem(-0.75px),
   ),
@@ -132,6 +132,63 @@ $body: (
   ),
 );
 
+$body-bold: (
+  default: (
+    font-family: var(--text-regular),
+    font-size: convert-rem(17px),
+    line-height: convert-rem(23px),
+    font-weight: 700,
+  ),
+  $desktop: (
+    font-size: convert-rem(19px),
+    line-height: convert-rem(27px),
+  ),
+  $ultra-wide: (
+    font-size: convert-rem(20px),
+    line-height: convert-rem(28px),
+  ),
+);
+
+$body-small: (
+  default: (
+    font-family: var(--text-regular),
+    font-size: convert-rem(14px),
+    font-weight: 400,
+    line-height: convert-rem(22px),
+    letter-spacing: 0.005em,
+  ),
+  $desktop: (
+    font-size: convert-rem(16px),
+    line-height: convert-rem(22px),
+    letter-spacing: 0.008em,
+  ),
+  $ultra-wide: (
+    font-size: convert-rem(18px),
+    line-height: convert-rem(24px),
+    letter-spacing: 0.005em,
+  ),
+);
+
+$body-large: (
+  default: (
+    font-family: var(--text-regular),
+    font-size: convert-rem(19px),
+    font-weight: 400,
+    line-height: convert-rem(27px),
+    letter-spacing: 0.005em,
+  ),
+  $desktop: (
+    font-size: convert-rem(23px),
+    line-height: convert-rem(30px),
+    letter-spacing: 0.008em,
+  ),
+  $ultra-wide: (
+    font-size: convert-rem(25px),
+    line-height: convert-rem(32px),
+    letter-spacing: 0.005em,
+  ),
+);
+
 $code: (
   default: (
     font-family: var(--text-code),
@@ -147,24 +204,6 @@ $code: (
   $ultra-wide: (
     font-size: convert-rem(20px),
     line-height: convert-rem(25px),
-  ),
-);
-
-
-$body-bold: (
-  default: (
-    font-family: var(--text-regular),
-    font-size: convert-rem(17px),
-    line-height: convert-rem(23px),
-    font-weight: 700,
-  ),
-  $desktop: (
-    font-size: convert-rem(19px),
-    line-height: convert-rem(27px),
-  ),
-  $ultra-wide: (
-    font-size: convert-rem(20px),
-    line-height: convert-rem(28px),
   ),
 );
 
@@ -303,7 +342,7 @@ $blockquote: (
     font-family: var(--text-regular),
     font-size: convert-rem(27px),
     font-weight: 400,
-    line-height: convert-rem(40px),
+    line-height: convert-rem(40px)
   ),
   $desktop: (
     font-size: convert-rem(38px),
@@ -317,22 +356,23 @@ $blockquote: (
   ),
 );
 
-$body-large: (
+$overline: (
   default: (
     font-family: var(--text-regular),
-    font-size: convert-rem(19px),
-    font-weight: 400,
-    line-height: convert-rem(27px),
-    letter-spacing: 0.005em,
+    font-size: convert-rem(8px),
+    line-height: convert-rem(10px),
+    font-weight: 700,
+    letter-spacing: convert-rem(1.5px),
+    text-transform: uppercase
   ),
   $desktop: (
-    font-size: convert-rem(23px),
-    line-height: convert-rem(30px),
-    letter-spacing: 0.008em,
+    font-size: convert-rem(10px),
+    line-height: convert-rem(14px),
+    letter-spacing: 0.01em,
   ),
   $ultra-wide: (
-    font-size: convert-rem(25px),
-    line-height: convert-rem(32px),
-    letter-spacing: 0.005em,
+    font-size: convert-rem(12px),
+    line-height: convert-rem(16px),
+    letter-spacing: 0,
   ),
 );

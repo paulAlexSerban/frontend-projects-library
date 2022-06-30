@@ -8,10 +8,4 @@ $block: "#{$type}-unordered-list";
     color: var(--text-base-color);
     margin-bottom: $baseline * 2;
   }
-
-  @include e("item") {
-    .o-fixed-wiki-navigation__base & {
-      margin-bottom: $baseline;
-    }
-  }
 }

@@ -3,8 +3,14 @@ $block: "#{$type}-article";
 
 .#{$block} {
   @include e("base") {
-    @extend %margin-bottom-64; /* $gutter * 4 */
+    @extend %margin-bottom-64;
 
-    border-bottom: 1px solid fx-color($c-gray, sonic-silver);
+    &:not(:last-of-type) {
+      @extend %border-bottom-solid-silver;
+    }
+  }
+
+  @include e("content") {
+    align-items: stretch;
   }
 }

@@ -1,0 +1,20 @@
+$type: "o";
+$block: "#{$type}-post";
+
+.#{$block} {
+  @include e("base") {
+    @extend %margin-bottom-64; /* $baseline * 8 */
+
+    &:not(:last-of-type) {
+      @extend %border-bottom-solid-silver;
+    }
+  }
+
+  @include e("header") {
+    @extend %margin-bottom-32; /* $baseline * 4 */
+  }
+
+  @include e("meta") {
+    @include font($body-small);
+  }
+}

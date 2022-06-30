@@ -12,17 +12,18 @@
 
 /*  ORGANISMS  */
 @import "../../../components/organisms/header/header.scss";
+@import "../../../components/organisms/footer/footer.scss";
 @import "../../../components/organisms/main/wiki-main/wiki-main.scss";
 @import "../../../components/organisms/article/article.scss";
 @import "../../../components/organisms/section/section.scss";
-@import "../../../components/organisms/navigation/fixed-wiki-navigation/fixed-wiki-navigation.scss";
+@import "../../../components/organisms/navigation/side-navigation/side-navigation.scss";
 
 /* || EXTENDING ATOMIC DESIGN || https://www.cjcid.com/articles/ions-introduction */
 
-/**
+/**********************************************************************************************************
   * TYPES
   * Normal Emphasized Informative Warning Alert Error Success)
-*/
+**********************************************************************************************************/
 
 /* ATOMS */
 @import "../../../components/atoms/typography/heading/heading.types.scss";
@@ -33,11 +34,11 @@
 
 /*  ORGANISMS  */
 
-/**
+/**********************************************************************************************************
   * STATES (states of interactive elements)
   * :default, ::placeholder, :placeholder-shown, :blank, :indeterminate, :checked, :optional
   * :required, :disabled, :enabled, :read-write, :read-only, :valid, :invalid, :in-range, :out-of-range
-*/
+**********************************************************************************************************/
 
 /* ATOMS */
 
@@ -45,9 +46,10 @@
 
 /*  ORGANISMS  */
 
-/** STATUSES
+/**********************************************************************************************************
+  * STATUSES
   * ::selection, :hover, -webkit-tap-highlight-color, :focus, :focus-within, :active, :link, :visited
-*/
+**********************************************************************************************************/
 
 /* ATOMS */
 @import "../../../components/atoms/typography/link/link.statuses.scss";
@@ -55,6 +57,19 @@
 /*  MOLECULES  */
 
 /*  ORGANISMS  */
+
+/********************************************************************************************************
+  * SIBLINGS
+  * descendant, adjacent, general, child
+*********************************************************************************************************/
+
+/* ATOMS */
+
+/*  MOLECULES  */
+
+/*  ORGANISMS  */
+@import "../../../components/organisms/header/header.siblings.scss";
+@import "../../../components/atoms/typography/list/unordered-list/unordered-list.siblings.scss";
 
 /* High Specificity Rules */
 // @import "../../../utilities/utilities.scss";
