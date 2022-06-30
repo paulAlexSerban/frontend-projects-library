@@ -2,6 +2,12 @@ $type: "o";
 $block: "#{$type}-footer";
 
 .#{$block} {
+  @include e("base") {
+    @extend %border-top-solid-silver;
+    @extend %padding-top-32;
+    @extend %padding-bottom-32;
+  }
+
   @include e("container") {
     @extend %margin-bottom-32;
   }
@@ -11,4 +17,3 @@ $block: "#{$type}-footer";
     color: fx-color($c-gray, battleship-grey);
   }
 }
-

@@ -355,3 +355,24 @@ $blockquote: (
     letter-spacing: 0,
   ),
 );
+
+$overline: (
+  default: (
+    font-family: var(--text-regular),
+    font-size: convert-rem(8px),
+    line-height: convert-rem(10px),
+    font-weight: 700,
+    letter-spacing: convert-rem(1.5px),
+    text-transform: uppercase
+  ),
+  $desktop: (
+    font-size: convert-rem(10px),
+    line-height: convert-rem(14px),
+    letter-spacing: 0.01em,
+  ),
+  $ultra-wide: (
+    font-size: convert-rem(12px),
+    line-height: convert-rem(16px),
+    letter-spacing: 0,
+  ),
+);

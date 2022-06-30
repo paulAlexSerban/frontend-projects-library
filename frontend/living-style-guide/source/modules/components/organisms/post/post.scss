@@ -5,7 +5,9 @@ $block: "#{$type}-post";
   @include e("base") {
     @extend %margin-bottom-64; /* $baseline * 8 */
 
-    border-bottom: 1px solid fx-color($c-gray, sonic-silver);
+    &:not(:last-of-type) {
+      @extend %border-bottom-solid-silver;
+    }
   }
 
   @include e("header") {

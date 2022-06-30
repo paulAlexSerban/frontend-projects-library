@@ -4,7 +4,10 @@ $block: "#{$type}-article";
 .#{$block} {
   @include e("base") {
     @extend %margin-bottom-64;
-    @extend %border-bottom-solid-silver;
+
+    &:not(:last-of-type) {
+      @extend %border-bottom-solid-silver;
+    }
   }
 
   @include e("content") {

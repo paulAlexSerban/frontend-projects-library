@@ -27,6 +27,9 @@
 %no-border {
   border: none;
 }
+%border-top-solid-silver {
+  border-top: 1px solid fx-color($c-gray, sonic-silver);
+}
 
 %border-bottom-solid-silver {
   @include border($bottom: 1px solid fx-color($c-gray, sonic-silver));

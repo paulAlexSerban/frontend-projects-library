@@ -5,12 +5,16 @@
 @import "../../../components/atoms/typography/time/time.scss";
 @import "../../../components/atoms/typography/link/link.scss";
 @import "../../../components/atoms/typography/list/unordered-list/unordered-list.scss";
+@import "../../../components/atoms/link-icon/link-icon.scss";
 
 /*  MOLECULES  */
 @import "../../../components/molecules/address/address.scss";
+@import "../../../components/molecules/figure/figure.scss";
+@import "../../../components/molecules/reference-list/reference-list.scss";
 
 /*  ORGANISMS  */
 @import "../../../components/organisms/article/article.scss";
+@import "../../../components/organisms/aside/aside.scss";
 @import "../../../components/organisms/footer/footer.scss";
 @import "../../../components/organisms/header/header.scss";
 @import "../../../components/organisms/navigation/navigation-bar/navigation-bar.scss";
@@ -32,11 +36,11 @@
 
 /*  ORGANISMS  */
 
-/**
+/**********************************************************************************************************
   * STATES (states of interactive elements)
   * :default, ::placeholder, :placeholder-shown, :blank, :indeterminate, :checked, :optional
   * :required, :disabled, :enabled, :read-write, :read-only, :valid, :invalid, :in-range, :out-of-range
-*/
+**********************************************************************************************************/
 
 /* ATOMS */
 
@@ -44,12 +48,14 @@
 
 /*  ORGANISMS  */
 
-/** STATUSES
+/**********************************************************************************************************
+  * STATUSES
   * ::selection, :hover, -webkit-tap-highlight-color, :focus, :focus-within, :active, :link, :visited
-*/
+**********************************************************************************************************/
 
 /* ATOMS */
 @import "../../../components/atoms/typography/link/link.statuses.scss";
+@import "../../../components/atoms/link-icon/link-icon.statuses.scss";
 
 /*  MOLECULES  */
 
@@ -63,8 +69,10 @@
 /*  ATOMS  */
 @import "../../../components/atoms/typography/blockquote/blockquote.siblings.scss";
 @import "../../../components/atoms/typography/heading/heading.siblings.scss";
+@import "../../../components/atoms/link-icon/link-icon.siblings.scss";
 
 /*  MOLECULES  */
+@import "../../../components/molecules/reference-list/reference-list.siblings.scss";
 
 /*  ORGANISMS  */
 @import "../../../components/organisms/navigation/navigation-bar/navigation-bar.siblings.scss";

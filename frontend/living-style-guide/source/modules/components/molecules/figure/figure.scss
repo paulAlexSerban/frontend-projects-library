@@ -3,9 +3,8 @@ $cmp: "m-figure";
 .#{$cmp} {
   @include e("base") {
     @extend %margin-centered;
-    @extend %margin-bottom-16; /* $gutter */
+    @extend %margin-bottom-32;
 
-    border: thin solid fx-color($c-gray, sonic-silver);
     display: block;
     padding: $baseline ($gutter / 2);
     width: fit-content;
@@ -13,9 +12,5 @@ $cmp: "m-figure";
 
   @include e("caption") {
     @include font($label);
-    background-color: var(--text-base-color);
-    color: #fff;
-    padding: 3px;
-    text-align: center;
   }
 }

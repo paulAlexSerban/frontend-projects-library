@@ -36,7 +36,7 @@ task("transpile:javascript", series(transpileJavaScriptPages));
 // | Main tasks                                                        |
 // ---------------------------------------------------------------------
 
-task("build", series("clean", parallel("process:assets", "process:html", "compile:styles", "transpile:javascript")));
+task("build", series("clean", "process:assets", parallel("process:html", "compile:styles", "transpile:javascript")));
 
 task("watch", () => {
   watch(paths.src.html.htmlFiles, series("process:html"));
