@@ -7,16 +7,11 @@ import { createImageRenditions } from "./tasks/createImageRenditions";
 // ---------------------------------------------------------------------
 // | Helper tasks                                                      |
 // ---------------------------------------------------------------------
-task("clean", clean);
-task("process:icons",  processIcons);
-task("process:svgs", processSvgs),
-task("images:createRenditions", createImageRenditions);
 
 // ---------------------------------------------------------------------
 // | Main tasks                                                        |
 // ---------------------------------------------------------------------
 task(
-  "build",
-  series("clean", parallel( "process:icons", "process:svgs", "images:createRenditions"))
-  
+  "process",
+  series(clean, parallel( processIcons, processSvgs, createImageRenditions))
 );
