@@ -1,60 +1,40 @@
-################################################################
-# API and dashboard configuration
-################################################################
+---
 api:
-  # Dashboard
-  #
   debug: true
   dashboard: true
   insecure: true
-################################################################
-# Docker configuration backend
-################################################################
+
 providers:
   docker:
     exposedByDefault: false
     defaultRule: "Host(`{{ trimPrefix `/` .Name }}.localhost`)"
-################################################################
-# Traefik Logging
-################################################################
+
 log:
   level: INFO
 
-################################################################
-# Entrypoint
-################################################################
-experimental:
-  http3: true
+accessLog:
+  filePath: "/var/log/traefik/access.log"
+  format: json
+  filters:
+    statusCodes:
+      - "200"
+      - "300-302"
+      - "404"
+      - "500-550"
+    retryAttempts: true
+    minDuration: "10ms"
+
+ping: {}
 
 entryPoints:
   web:
     address: ":80"
-    http:
-      redirections:
-        entryPoint:
-          to: websecure
-          scheme: https
   websecure:
     address: ":443"
-    http:
-      tls:
-        certResolver: leresolver
-    http3:
-      advertisedPort: "443"
-  # streaming:
-  #   address: ":1704/udp"
-  # tcpep:
-  #   address: ":3179"
-  # udpep:
-  #   address: ":3179/udp"
 
-################################################################
-# Challenge HTTP
-################################################################
 certificatesResolvers:
   myresolver:
     acme:
-      email: serban.paul.91@gmail.com 
+      email: serban.paul.91@gmail.com
       storage: acme.json
-      httpChallenge:
-        entryPoint: web
+      tlsChallenge: true
