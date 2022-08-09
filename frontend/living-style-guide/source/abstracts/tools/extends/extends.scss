@@ -1,6 +1,7 @@
 /**
   * NOTE
     - extends should not be used in mixins as you risc duplication of code
+    - do use comments inside the block which uses extends, it will generate an empty block of code
 */
 
 @import "./box-model.scss";

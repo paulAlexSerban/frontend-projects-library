@@ -1,0 +1,10 @@
+$type: "a";
+$block: "#{$type}-unordered-list";
+
+.#{$block} {
+  @include e("item") {
+    .o-side-navigation__base & {
+      margin-bottom: $baseline;
+    }
+  }
+}

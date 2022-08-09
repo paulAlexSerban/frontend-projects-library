@@ -1,0 +1,9 @@
+$type: "o";
+$block: "#{$type}-navigation-bar";
+
+.#{$block} {
+  @include e("base") {
+    @extend %padding-top-32;
+    @extend %margin-bottom-32;
+  }
+}

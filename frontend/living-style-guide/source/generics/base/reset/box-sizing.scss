@@ -12,11 +12,11 @@
 *,
 *::before,
 *::after {
-  @extend %margin-reset; /* 1 */
-  @extend %padding-reset; /* 1 */
-  @extend %box-sizing; /* 2 */
+  @extend %margin-reset;
+  @extend %padding-reset;
+  @extend %box-sizing;
 }
 
 html {
-  @extend %box-sizing; /* 3 */
+  @extend %box-sizing;
 }
