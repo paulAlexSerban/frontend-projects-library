@@ -1,13 +1,12 @@
 @use "true" as *;
-@import "../../source/abstracts/abstracts.scss";
 @include report;
 
-@include describe("fx-color($c-light, light)") {
+@include describe("get-color($c-light, light)") {
   @include it("Should return color: #fff") {
     @include assert {
       @include output {
         .light-color {
-          color: fx-color($c-light, light);
+          color: get-color($c-light, light);
         }
       }
 
