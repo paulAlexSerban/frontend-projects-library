@@ -27,7 +27,6 @@
     "watch:frontend:jscl": "npm --prefix frontend/js-component-library run watch",
     "watch:frontend:poc": "npm --prefix frontend/static/poc run watch",
     "🐳  🟢  🐳  🟢 ": "START - Docker Compose",
-    "start:compose:all": "bash package-scripts.bash startComposeAll",
     "start:compose:proxy": "bash package-scripts.bash startComposeProxy",
     "start:compose:poc": "bash package-scripts.bash startStaticPoc",
     "🛑  🐳  🛑  🐳": "STOP - Docker Compose",
