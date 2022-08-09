@@ -1,22 +1,22 @@
 /*  ATOMS  */
-@import "../../../components/atoms/typography/heading/heading.scss";
-@import "../../../components/atoms/typography/paragraph/paragraph.scss";
-@import "../../../components/atoms/typography/link/link.scss";
-@import "../../../components/atoms/typography/list/definition-list/definition-list.scss";
-@import "../../../components/atoms/typography/code/code.scss";
-@import "../../../components/atoms/typography/list/unordered-list/unordered-list.scss";
-@import "../../../components/atoms/image/image.scss";
+@import "../../../library/01_components/typography/heading/heading.scss";
+@import "../../../library/01_components/typography/paragraph/paragraph.scss";
+@import "../../../library/01_components/typography/link/link.scss";
+@import "../../../library/01_components/typography/list/definition-list/definition-list.scss";
+@import "../../../library/01_components/typography/code/code.scss";
+@import "../../../library/01_components/typography/list/unordered-list/unordered-list.scss";
+@import "../../../library/01_components/image/image.scss";
 
 /*  MOLECULES  */
-@import "../../../components/molecules/figure/figure.scss";
+@import "../../../library/02_patterns/figure/figure.scss";
 
 /*  ORGANISMS  */
-@import "../../../components/organisms/header/header.scss";
-@import "../../../components/organisms/footer/footer.scss";
-@import "../../../components/organisms/main/wiki-main/wiki-main.scss";
-@import "../../../components/organisms/article/article.scss";
-@import "../../../components/organisms/section/section.scss";
-@import "../../../components/organisms/navigation/side-navigation/side-navigation.scss";
+@import "../../../library/03_modules/header/header.scss";
+@import "../../../library/03_modules/footer/footer.scss";
+@import "../../../library/03_modules/main/wiki-main/wiki-main.scss";
+@import "../../../library/03_modules/article/article.scss";
+@import "../../../library/03_modules/section/section.scss";
+@import "../../../library/03_modules/navigation/side-navigation/side-navigation.scss";
 
 /* || EXTENDING ATOMIC DESIGN || https://www.cjcid.com/articles/ions-introduction */
 
@@ -26,9 +26,9 @@
 **********************************************************************************************************/
 
 /* ATOMS */
-@import "../../../components/atoms/typography/heading/heading.types.scss";
-@import "../../../components/atoms/typography/list/unordered-list/unordered-list.types.scss";
-@import "../../../components/atoms/typography/link/link.types.scss";
+@import "../../../library/01_components/typography/heading/heading.types.scss";
+@import "../../../library/01_components/typography/list/unordered-list/unordered-list.types.scss";
+@import "../../../library/01_components/typography/link/link.types.scss";
 
 /*  MOLECULES  */
 
@@ -52,7 +52,7 @@
 **********************************************************************************************************/
 
 /* ATOMS */
-@import "../../../components/atoms/typography/link/link.statuses.scss";
+@import "../../../library/01_components/typography/link/link.statuses.scss";
 
 /*  MOLECULES  */
 
@@ -68,8 +68,8 @@
 /*  MOLECULES  */
 
 /*  ORGANISMS  */
-@import "../../../components/organisms/header/header.siblings.scss";
-@import "../../../components/atoms/typography/list/unordered-list/unordered-list.siblings.scss";
+@import "../../../library/03_modules/header/header.siblings.scss";
+@import "../../../library/01_components/typography/list/unordered-list/unordered-list.siblings.scss";
 
 /* High Specificity Rules */
 // @import "../../../utilities/utilities.scss";

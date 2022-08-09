@@ -2,6 +2,10 @@
 @import "../viewports/breakpoints.scss";
 @import "./sizes.scss";
 
+/*------------------------------------*\
+  #FONT-DEFINITIONS
+\*------------------------------------*/
+
 $page-title: (
   default: (
     --page-title-font-size: convert-rem(48px),

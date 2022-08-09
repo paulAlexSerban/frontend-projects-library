@@ -29,3 +29,6 @@
 
 - [traefik dashboard](http://localhost:8080/dashboard)
 - [poc](https://poc-ui-techstack-insights.localhost/)
+
+## Resources
+- [coding style guide](https://cssguidelin.es/)
