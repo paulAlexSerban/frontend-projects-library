@@ -1,0 +1,10 @@
+$cmp: "a-blockquote";
+
+.#{$cmp} {
+  @include e("base") {
+    @include font($blockquote);
+    @extend %italic;
+
+    color: fx-color($c-gray, sonic-silver);
+  }
+}

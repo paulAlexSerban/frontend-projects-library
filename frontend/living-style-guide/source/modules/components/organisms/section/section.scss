@@ -1,8 +1,0 @@
-$type: "o";
-$block: "#{$type}-section";
-
-.#{$block} {
-  @include e("base") {
-    @extend %margin-bottom-64; /* $gutter * 4 */
-  }
-}

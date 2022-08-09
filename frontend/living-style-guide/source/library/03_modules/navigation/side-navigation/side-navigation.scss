@@ -1,0 +1,10 @@
+$type: "o";
+$block: "#{$type}-side-navigation";
+
+.#{$block} {
+  @include e("base") {
+    @extend %margin-bottom-64; /* $baseline * 8 */
+
+    border-right: 1px solid fx-color($c-gray, sonic-silver);
+  }
+}

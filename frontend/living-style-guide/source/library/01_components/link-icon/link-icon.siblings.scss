@@ -1,0 +1,19 @@
+$type: "a";
+$block: "#{$type}-link-icon";
+
+.#{$block} {
+  @include e("tooltip") {
+    &::after {
+      @include absolute($bottom: convert-rem(1px), $left: 50%);
+
+      display: block;
+      width: 0;
+      height: 0;
+      content: "";
+      border: solid;
+      border-width: convert-rem(10px) convert-rem(10px) 0;
+      border-color: transparent;
+      transform: translate(-50%, 100%);
+    }
+  }
+}

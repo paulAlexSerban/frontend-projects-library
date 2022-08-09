@@ -27,23 +27,16 @@
 %no-border {
   border: none;
 }
-@mixin border($top: none, $right: none, $bottom: none, $left: none) {
-  border-top: $top;
-  @if $right == none {
-    border-right: $top;
-  } @else {
-    border-right: $right;
-  }
-  @if $bottom == none {
-    border-bottom: $top;
-  } @else {
-    border-bottom: $bottom;
-  }
-  @if $left == none {
-    border-left: $top;
-  } @else {
-    border-left: $left;
-  }
+%border-top-solid-silver {
+  border-top: 1px solid fx-color($c-gray, sonic-silver);
+}
+
+%border-bottom-solid-silver {
+  @include border($bottom: 1px solid fx-color($c-gray, sonic-silver));
+}
+
+%border-right-solid-silver {
+  @include border($right: 1px solid fx-color($c-gray, sonic-silver));
 }
 
 // border-radius

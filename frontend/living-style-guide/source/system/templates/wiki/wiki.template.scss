@@ -1,0 +1,76 @@
+/*  ATOMS  */
+@import "../../../library/01_components/typography/heading/heading.scss";
+@import "../../../library/01_components/typography/paragraph/paragraph.scss";
+@import "../../../library/01_components/typography/link/link.scss";
+@import "../../../library/01_components/typography/list/definition-list/definition-list.scss";
+@import "../../../library/01_components/typography/code/code.scss";
+@import "../../../library/01_components/typography/list/unordered-list/unordered-list.scss";
+@import "../../../library/01_components/image/image.scss";
+
+/*  MOLECULES  */
+@import "../../../library/02_patterns/figure/figure.scss";
+
+/*  ORGANISMS  */
+@import "../../../library/03_modules/header/header.scss";
+@import "../../../library/03_modules/footer/footer.scss";
+@import "../../../library/03_modules/main/wiki-main/wiki-main.scss";
+@import "../../../library/03_modules/article/article.scss";
+@import "../../../library/03_modules/section/section.scss";
+@import "../../../library/03_modules/navigation/side-navigation/side-navigation.scss";
+
+/* || EXTENDING ATOMIC DESIGN || https://www.cjcid.com/articles/ions-introduction */
+
+/**********************************************************************************************************
+  * TYPES
+  * Normal Emphasized Informative Warning Alert Error Success)
+**********************************************************************************************************/
+
+/* ATOMS */
+@import "../../../library/01_components/typography/heading/heading.types.scss";
+@import "../../../library/01_components/typography/list/unordered-list/unordered-list.types.scss";
+@import "../../../library/01_components/typography/link/link.types.scss";
+
+/*  MOLECULES  */
+
+/*  ORGANISMS  */
+
+/**********************************************************************************************************
+  * STATES (states of interactive elements)
+  * :default, ::placeholder, :placeholder-shown, :blank, :indeterminate, :checked, :optional
+  * :required, :disabled, :enabled, :read-write, :read-only, :valid, :invalid, :in-range, :out-of-range
+**********************************************************************************************************/
+
+/* ATOMS */
+
+/*  MOLECULES  */
+
+/*  ORGANISMS  */
+
+/**********************************************************************************************************
+  * STATUSES
+  * ::selection, :hover, -webkit-tap-highlight-color, :focus, :focus-within, :active, :link, :visited
+**********************************************************************************************************/
+
+/* ATOMS */
+@import "../../../library/01_components/typography/link/link.statuses.scss";
+
+/*  MOLECULES  */
+
+/*  ORGANISMS  */
+
+/********************************************************************************************************
+  * SIBLINGS
+  * descendant, adjacent, general, child
+*********************************************************************************************************/
+
+/* ATOMS */
+
+/*  MOLECULES  */
+
+/*  ORGANISMS  */
+@import "../../../library/03_modules/header/header.siblings.scss";
+@import "../../../library/01_components/typography/list/unordered-list/unordered-list.siblings.scss";
+
+/* High Specificity Rules */
+// @import "../../../utilities/utilities.scss";
+// @import "../../../trumps/trumps.scss";

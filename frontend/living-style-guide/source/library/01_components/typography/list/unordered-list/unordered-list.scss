@@ -1,0 +1,11 @@
+$type: "a";
+$block: "#{$type}-unordered-list";
+
+.#{$block} {
+  @include e("base") {
+    @include font($body);
+
+    color: var(--text-base-color);
+    margin-bottom: $baseline * 2;
+  }
+}

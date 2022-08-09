@@ -4,9 +4,10 @@
 */
 
 img {
-  @extend %no-border; /* 1 */
+  @include height();
+  @extend %no-border;
   @extend %display-block;
-  max-width: 100%; /* 2 */
-  @include height(); /* 2 */
+
+  max-width: 100%;
   object-fit: cover;
 }
