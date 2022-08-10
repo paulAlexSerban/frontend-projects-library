@@ -1,0 +1,15 @@
+$type: "mod";
+$block: "#{$type}-navigation-bar";
+
+.#{$block} {
+  @include e("base") {
+    @extend %padding-top-32;
+    @extend %margin-bottom-32;
+
+    .cmp-list-unordered__base {
+      @include flex();
+
+      gap: $gutter;
+    }
+  }
+}

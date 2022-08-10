@@ -1,8 +1,8 @@
 /* ------------------------------------ *\
  * #BUTTON
 \* ------------------------------------ */
-
-$block: "cmp-button";
+$type: "cmp";
+$block: "#{$type}-button";
 
 .#{$block} {
   @include element("base") {

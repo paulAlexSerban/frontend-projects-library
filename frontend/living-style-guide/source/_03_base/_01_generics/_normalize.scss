@@ -41,7 +41,6 @@ body {
   @extend %flex-col;
 
   background-color: get-color($c-light, light);
-  overflow-x: hidden;
   min-height: 100vh;
 
   > * {

@@ -2,8 +2,16 @@
  * #IMAGE
 \* ------------------------------------ */
 
-$block: "cmp-image";
+$type: "cmp";
+$block: "#{$type}-image";
 
 .#{$block} {
-  @extend %display-block;
+  @include e("base") {
+    max-width: $max-width / 3;
+    max-height: 300px;
+
+    @include breakpoint($tablet) {
+      max-width: $max-width / 2;
+    }
+  }
 }

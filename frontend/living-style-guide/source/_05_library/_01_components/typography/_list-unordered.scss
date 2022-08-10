@@ -1,0 +1,22 @@
+$type: "cmp";
+$block: "#{$type}-list-unordered";
+
+.#{$block} {
+  @include e("base") {
+    @include font($body);
+
+    color: var(--text-base-color);
+    margin-bottom: $baseline * 2;
+
+    @include m("bulleted") {
+      list-style: circle;
+      list-style-position: inside;
+    }
+  }
+
+  @include e("item") {
+    .o-side-navigation__base & {
+      margin-bottom: $baseline;
+    }
+  }
+}

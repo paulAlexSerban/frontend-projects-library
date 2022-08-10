@@ -5,5 +5,16 @@
 $block: "pat-figure";
 
 .#{$block} {
-  @extend %display-block;
+  @include e("base") {
+    @extend %margin-centered;
+    @extend %margin-bottom-32;
+
+    display: block;
+    padding: $baseline ($gutter / 2);
+    width: fit-content;
+  }
+
+  @include e("caption") {
+    @include font($label);
+  }
 }
