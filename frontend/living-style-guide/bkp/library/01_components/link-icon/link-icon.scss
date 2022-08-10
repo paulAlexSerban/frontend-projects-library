@@ -10,7 +10,7 @@ $block: "#{$type}-link-icon";
     cursor: pointer;
     transition: all 0.15s ease;
     text-decoration: none;
-    color: fx-color($c-blue, rhythm);
+    color: get-color($c-blue, rhythm);
 
     @include on-event() {
       text-decoration: none;

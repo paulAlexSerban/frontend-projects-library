@@ -117,7 +117,7 @@ module.exports = {
           "list.append",
           "font-weight",
           "map-deep-get",
-          "fx-color",
+          "get-color",
           "color.adjust",
           "color.mix",
           "box-shadow",

@@ -9,7 +9,7 @@ $cmp: "m-pureCssAccordion";
 
   &__item {
     width: 100%;
-    color: fx-color($c-light, cultured);
+    color: get-color($c-light, cultured);
     overflow: hidden;
   }
 
@@ -25,15 +25,15 @@ $cmp: "m-pureCssAccordion";
     @include font($label);
 
     padding: $baseline $gutter;
-    background: fx-color($c-blue, charcoal);
+    background: get-color($c-blue, charcoal);
     cursor: pointer;
   }
 
   &__content {
     max-height: 0;
     padding: 0 1em;
-    color: fx-color($c-blue, charcoal);
-    background: fx-color($c-light, cultured);
+    color: get-color($c-blue, charcoal);
+    background: get-color($c-light, cultured);
     transition: all 0.35s ease-in-out;
   }
 }

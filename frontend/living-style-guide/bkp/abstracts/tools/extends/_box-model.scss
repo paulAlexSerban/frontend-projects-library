@@ -28,15 +28,15 @@
   border: none;
 }
 %border-top-solid-silver {
-  border-top: 1px solid fx-color($c-gray, sonic-silver);
+  border-top: 1px solid get-color($c-gray, sonic-silver);
 }
 
 %border-bottom-solid-silver {
-  @include border($bottom: 1px solid fx-color($c-gray, sonic-silver));
+  @include border($bottom: 1px solid get-color($c-gray, sonic-silver));
 }
 
 %border-right-solid-silver {
-  @include border($right: 1px solid fx-color($c-gray, sonic-silver));
+  @include border($right: 1px solid get-color($c-gray, sonic-silver));
 }
 
 // border-radius

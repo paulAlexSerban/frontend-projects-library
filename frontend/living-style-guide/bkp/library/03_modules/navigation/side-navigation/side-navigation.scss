@@ -5,6 +5,6 @@ $block: "#{$type}-side-navigation";
   @include e("base") {
     @extend %margin-bottom-64; /* $baseline * 8 */
 
-    border-right: 1px solid fx-color($c-gray, sonic-silver);
+    border-right: 1px solid get-color($c-gray, sonic-silver);
   }
 }

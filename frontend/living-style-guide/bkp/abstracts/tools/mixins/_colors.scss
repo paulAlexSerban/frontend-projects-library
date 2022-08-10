@@ -1,5 +1,5 @@
 /* stylelint-disable */
-@mixin mix-color($color: fx-color($c-dark, black), $light: 0, $dark: 0) {
+@mixin mix-color($color: get-color($c-dark, dark), $light: 0, $dark: 0) {
   color: $color;
   @if $light != 0 {
     color: lighten($color, $light);
@@ -8,7 +8,7 @@
   }
 }
 
-@mixin mix-bg-color($color: fx-color($c-dark, black), $light: 0, $dark: 0) {
+@mixin mix-bg-color($color: get-color($c-dark, dark), $light: 0, $dark: 0) {
   background-color: $color;
   @if $light != 0 {
     background-color: lighten($color, $light);

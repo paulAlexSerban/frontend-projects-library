@@ -17,7 +17,7 @@ $cmp: "a-button";
     @include m("secondary") {
       @extend %bkg-color-secondary;
 
-      box-shadow: fx-color($c-dark, dark-15) 0 0 0 convert-rem(1px) inset;
+      box-shadow: get-color($c-dark, dark-15) 0 0 0 convert-rem(1px) inset;
     }
 
     @include m("success") {

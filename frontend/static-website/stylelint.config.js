@@ -115,7 +115,7 @@ module.exports = {
           "meta.get-function",
           "list.append",
           "font-weight",
-          "fx-color",
+          "get-color",
           "color.adjust",
           "box-shadow"
         ],

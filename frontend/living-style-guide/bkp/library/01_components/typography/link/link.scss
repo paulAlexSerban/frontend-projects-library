@@ -4,6 +4,6 @@ $cmp:  "a-link";
   @include e("base"){
     @include font($link);
 
-    color: fx-color($c-blue, rhythm);
+    color: get-color($c-blue, rhythm);
   }
 }

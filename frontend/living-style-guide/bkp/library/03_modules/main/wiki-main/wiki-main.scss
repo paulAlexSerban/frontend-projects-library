@@ -4,7 +4,7 @@ $block: "#{$type}-wiki-main";
 .#{$block} {
   @include e("base") {
     @include relative();
-    border-bottom: 1px solid fx-color($c-gray, sonic-silver);
+    border-bottom: 1px solid get-color($c-gray, sonic-silver);
   }
 
   @include e("sidebar", "content") {

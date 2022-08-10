@@ -19,7 +19,7 @@
       @include absolute($top: 50%, $left: 0);
 
       content: "";
-      background-color: fx-color($c-light, gainsboro-white);
+      background-color: get-color($c-light, gainsboro-white);
       transform: translateY(-50%);
       height: ($baseline / 2);
       width: 100%;
@@ -34,7 +34,7 @@
   &__progress-bar {
     @include absolute($top: 50%, $left: 0);
 
-    background-color: fx-color($c-blue, carolina-blue);
+    background-color: get-color($c-blue, carolina-blue);
     transform: translateY(-50%);
     height: $baseline / 2;
     width: 0%;

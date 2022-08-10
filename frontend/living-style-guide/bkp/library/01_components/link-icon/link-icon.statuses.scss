@@ -6,7 +6,7 @@ $block: "#{$type}-link-icon";
     .#{$block}__base:hover &,
     .#{$block}__base:active &,
     .#{$block}__base:focus & {
-      color: fx-color($c-gray, sonic-silver);
+      color: get-color($c-gray, sonic-silver);
     }
   }
 

@@ -5,14 +5,14 @@ $cmp: "a-badge";
   @include e("base") {
     @include flex();
     @include font($label);
-    @include border(($baseline / 2) solid fx-color($c-light, gainsboro-white));
+    @include border(($baseline / 2) solid get-color($c-light, gainsboro-white));
     @include transition(
       $transition-property: border-color,
       $transition-time: 0.4s
     );
     @extend %bkg-color-secondary;
 
-    color: fx-color($c-gray, spanish-gray);
+    color: get-color($c-gray, spanish-gray);
 
     // normal size
     height: $baseline * 4;

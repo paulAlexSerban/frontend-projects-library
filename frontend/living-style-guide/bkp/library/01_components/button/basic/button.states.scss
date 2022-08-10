@@ -5,7 +5,7 @@ $cmp: "a-button";
     &:disabled {
       @extend %cursor-not-allowed;
 
-      background-color: fx-color($c-light, gainsboro-white);
+      background-color: get-color($c-light, gainsboro-white);
     }
   }
 }

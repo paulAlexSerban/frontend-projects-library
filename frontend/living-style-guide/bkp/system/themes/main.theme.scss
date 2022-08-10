@@ -1,9 +1,9 @@
 :root {
-  --text-base-color: #{fx-color($c-dark, eerie-black)};
+  --text-base-color: #{get-color($c-dark, eerie-black)};
   --font-weight--page-title: 300;
   --font-weight--heading: 400;
   --font-weight--button: 400;
   --text-regular: #{$fontFam-openSans}; /* regular font family */
   --text-code: #{$fontFam-courierPrime}; /* code family */
-  --main-background-color: #{fx-color($c-light, light)};
+  --main-background-color: #{get-color($c-light, light)};
 }
