@@ -1,8 +1,9 @@
 /* ------------------------------------ *\
- * #FIGURE
+ * FIGURE
 \* ------------------------------------ */
 
-$block: "pat-figure";
+$type: "pat";
+$block: "#{$type}-figure";
 
 .#{$block} {
   @include e("base") {
@@ -11,10 +12,24 @@ $block: "pat-figure";
 
     display: block;
     padding: $baseline ($gutter / 2);
-    width: fit-content;
+  }
+
+  @include e("container") {
+    @include flex($direction: column);
   }
 
   @include e("caption") {
     @include font($label);
+  }
+
+  @include e("picture") {
+    @include aspect-ratio(16, 9, "pat-figure__image");
+  }
+
+  @include e("image") {
+    @extend %size-fill-horizontal;
+    @extend %size-fill-vertical;
+
+    object-fit: cover;
   }
 }

@@ -3,7 +3,7 @@ $block: "#{$type}-list-definition";
 
 .#{$block} {
   @include e("base") {
-    color: var(--text-base-color);
+    color: var(--text-color);
     margin-bottom: $baseline * 2;
   }
 

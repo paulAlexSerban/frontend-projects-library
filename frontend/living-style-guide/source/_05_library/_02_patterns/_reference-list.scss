@@ -3,8 +3,6 @@ $block: "#{$type}-reference-list";
 
 .#{$block} {
   @include e("base") {
-    .cmp-list-unordered__item + .cmp-list-unordered__item {
-      @extend %padding-left-16;
-    }
+    @extend %display-block;
   }
 }

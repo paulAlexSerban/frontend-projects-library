@@ -8,8 +8,7 @@ $block: "#{$type}-button";
   @include element("base") {
     @include font($button);
     @include use-extends((cursor-pointer, display-inline-block, no-border));
-
-    padding: $baseline ($gutter * 2);
+    @extend %padding-16;
 
     &:disabled {
       @extend %cursor-not-allowed;

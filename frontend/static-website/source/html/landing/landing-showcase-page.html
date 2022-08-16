@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>HTML Intermediary</title>
+    <meta name="description" content="TODO - description text" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="TODO - og:title" />
+    <meta property="og:type" content="TODO - og:type" />
+    <meta property="og:url" content="TODO - og:url" />
+    <meta property="og:image" content="TODO - og:image" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/assets/icons/favicon-32x32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/assets/icons/favicon-16x16.png" sizes="16x16" type="image/png" />
+    <link rel="icon" href="/assets/svgs/hammer.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" href="/assets/icons/favicon-32x32.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-touch-icon.png" />
+    <link rel="mask-icon" href="/assets/svgs/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+
+    <!-- Critical Stylesheets - START -->
+    <link rel="stylesheet" href="../css/page/base.page.layer.css" />
+    <link rel="stylesheet" href="../css/template/landing.template.layer.css" />
+    <!-- Critical Stylesheets - END -->
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body class="container" data-page="index" data-template="template">
+    <header class="mod-header__base row">
+      <div class="mod-header__content col-smartphone-12">
+        <h1 class="cmp-heading__base cmp-heading__base--page-title cmp-heading__base--is-center-aligned">
+          <span class="cmp-heading__main">HTML Intermediary</span>
+        </h1>
+        <nav class="mod-navigation-bar__base">
+          <ul class="cmp-list-unordered__base cmp-list-unordered__base--row">
+            <li class="cmp-list-unordered__item">
+              <a href="#media-elements" class="cmp-link__base cmp-link__base--navigation">Media Elements</a>
+            </li>
+            <li class="cmp-list-unordered__item">
+              <a href="#responsive-images" class="cmp-link__base cmp-link__base--navigation">Responsive Images</a>
+            </li>
+            <li class="cmp-list-unordered__item">
+              <a href="#svgs" class="cmp-link__base cmp-link__base--navigation">SVGs</a>
+            </li>
+
+            <li class="cmp-list-unordered__item">
+              <a href="#iframe" class="cmp-link__base cmp-link__base--navigation">Iframe</a>
+            </li>
+
+            <li class="cmp-list-unordered__item">
+              <a href="#tables" class="cmp-link__base cmp-link__base--navigation">Tables</a>
+            </li>
+
+            <li class="cmp-list-unordered__item">
+              <a href="#forms" class="cmp-link__base cmp-link__base--navigation">Forms</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mod-main__base row no-gutter">
+      <article class="mod-article__base no-gutter col-smartphone-12" id="media-elements">
+        <div class="mod-article__container row no-gutter">
+          <header class="mod-article__header col-smartphone-12">
+            <h2 class="cmp-heading__base cmp-heading__base--heading-200">
+              <span class="cmp-heading__main">Media Elements</span>
+            </h2>
+          </header>
+          <div class="mod-article__body col-smartphone-12">
+            <section class="mod-section__base row">
+              <h3 class="cmp-heading__base cmp-heading__base--heading-300 col-smartphone-12">
+                <span class="cmp-heading__main">Video</span>
+              </h3>
+              <div class="cmp-video__base col-smartphone-12">
+                <video class="cmp-video__video" loop="" poster="../assets/images/lorem-image-original.webp" controls="">
+                  <source src="../assets/videos/video.mp4" type="video/mp4" />
+                  <source src="../assets/videos/video.webm" type="video/webm" />
+                  <p>Your browser is not supported</p>
+                </video>
+              </div>
+            </section>
+            <section class="mod-section__base row">
+              <h3 class="cmp-heading__base cmp-heading__base--heading-300 col-smartphone-12">
+                <span class="cmp-heading__main">Audio</span>
+              </h3>
+              <audio class="cmp-audio__base col-smartphone-12" id="audio-player" aria-label="label text" controls="">
+                <source src="../assets/audio/musica-triste.mp3" type="audio/mpeg" />
+                <p>Your browser is not supported</p>
+              </audio>
+            </section>
+            <section class="mod-section__base row">
+              <h3 class="cmp-heading__base cmp-heading__base--heading-300 col-smartphone-12">
+                <span class="cmp-heading__main">Picture</span>
+              </h3>
+              <figure class="pat-figure__base col-smartphone-12">
+                <picture class="pat-figure__picture">
+                  <source media="print" srcset="../assets/images/jerry-thomas-blue-blazer-bw-original.webp" />
+                  <source
+                    media="(min-width: 1920px)"
+                    srcset="../assets/images/jerry-thomas-blue-blazer-bw-1920px.webp"
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="../assets/images/jerry-thomas-blue-blazer-bw-1440px.webp"
+                  />
+                  <source media="(min-width: 960px)" srcset="../assets/images/jerry-thomas-blue-blazer-bw-960px.webp" />
+                  <source media="(min-width: 480px)" srcset="../assets/images/jerry-thomas-blue-blazer-bw-480px.webp" />
+                  <source media="(min-width: 320px)" srcset="../assets/images/jerry-thomas-blue-blazer-bw-320px.webp" />
+                  <img
+                    class="pat-figure__image"
+                    src="../assets/images/jerry-thomas-blue-blazer-bw-original.webp"
+                    alt="Erath from above"
+                  />
+                </picture>
+                <figcaption class="pat-figure__caption">Image Caption</figcaption>
+              </figure>
+            </section>
+          </div>
+        </div>
+      </article>
+
+      <article class="mod-article__base no-gutter col-smartphone-12" id="responsive-images">
+        <div class="mod-article__container row no-gutter">
+          <header class="mod-article__header col-smartphone-12">
+            <h2 class="cmp-heading__base cmp-heading__base--heading-200">
+              <span class="cmp-heading__main">Responsive images</span>
+            </h2>
+          </header>
+          <div class="mod-article__body col-smartphone-12">
+            <section class="mod-section__base row">
+              <div class="cmp-image__base col-smartphone-12">
+                <div class="cmp-image__container">
+                  <img
+                    class="cmp-image__image"
+                    loading="lazy"
+                    srcset="
+                      ../assets/images/wallpaper-320px.webp   320w,
+                      ../assets/images/wallpaper-480px.webp   480w,
+                      ../assets/images/wallpaper-960px.webp   960w,
+                      ../assets/images/wallpaper-1440px.webp 1440w,
+                      ../assets/images/wallpaper-1920px.webp 1920w
+                    "
+                    sizes="(max-width: 319px) 320px,
+                                    (max-width: 479px) 480px,
+                                    (max-width: 959px) 960px,
+                                    (max-width: 1439px) 1440px,
+                                    1920px"
+                    src="/assets/images/wallpaper-original.webp"
+                    alt="Image of Jerry The Professor Thomas preparing the Blue Blazer Cocktail using the throw preparation technique"
+                    id="image"
+                  />
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </article>
+
+      <article class="mod-article__base no-gutter col-smartphone-12" id="svgs">
+        <div class="mod-article__container row no-gutter">
+          <header class="mod-article__header col-smartphone-12">
+            <h2 class="cmp-heading__base cmp-heading__base--heading-200">
+              <span class="cmp-heading__main">SVGs</span>
+            </h2>
+          </header>
+          <div class="mod-article__body col-smartphone-12">
+            <section class="mod-section__base row">
+              <ul class="cmp-list-unordered__base cmp-list-unordered__base--row col-smartphone-12">
+                <li class="cmp-list-unordered__item">
+                  <svg src="logo-freecodecamp-icon-vector-01.svg" class="inline-svg cmp-link-icon__icon"></svg>
+                </li>
+                <li class="cmp-list-unordered__item">
+                  <svg src="logo-linkedin.svg" class="inline-svg cmp-link-icon__icon"></svg>
+                </li>
+                <li class="cmp-list-unordered__item">
+                  <svg src="logo-blogger.svg" class="inline-svg cmp-link-icon__icon"></svg>
+                </li>
+                <li class="cmp-list-unordered__item">
+                  <svg src="logo-github.svg" class="inline-svg cmp-link-icon__icon"></svg>
+                </li>
+                <li class="cmp-list-unordered__item">
+                  <svg src="logo-hackerank.svg" class="inline-svg cmp-link-icon__icon"></svg>
+                </li>
+                <li class="cmp-list-unordered__item">
+                  <svg src="logo-codepen.svg" class="inline-svg cmp-link-icon__icon"></svg>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </article>
+
+      <article class="mod-article__base no-gutter col-smartphone-12" id="iframe">
+        <div class="mod-article__container row no-gutter">
+          <header class="mod-article__header col-smartphone-12">
+            <h2 class="cmp-heading__base cmp-heading__base--heading-200">
+              <span class="cmp-heading__main">Iframe</span>
+            </h2>
+          </header>
+          <div class="mod-article__body col-smartphone-12">
+            <section class="mod-section__base row">
+              <div class="cmp-iframe__base col-smartphone-12">
+                <iframe
+                  class="cmp-iframe__iframe"
+                  title="#3 - CSS-Animations - @keyframes - staggering"
+                  src="https://codepen.io/paulalexserban/embed/KKdZNKx?default-tab="
+                  loading="lazy"
+                  allowtransparency="true"
+                  allowfullscreen="true"
+                >
+                </iframe>
+              </div>
+            </section>
+          </div>
+        </div>
+      </article>
+
+      <article class="mod-article__base no-gutter col-smartphone-12" id="tables">
+        <div class="mod-article__container row no-gutter">
+          <header class="mod-article__header col-smartphone-12">
+            <h2 class="cmp-heading__base cmp-heading__base--heading-200">
+              <span class="cmp-heading__main">Tables</span>
+            </h2>
+          </header>
+          <div class="mod-article__body col-smartphone-12">
+            <section class="mod-section__base row">
+              <table class="pat-table__base col-smartphone-12">
+                <thead class="pat-table__head">
+                  <tr class="pat-table__row">
+                    <th class="pat-table__header">First Name</th>
+                    <th class="pat-table__header">Last Name</th>
+                    <th class="pat-table__header">Job Title</th>
+                    <th class="pat-table__header">Opponent</th>
+                  </tr>
+                </thead>
+                <tbody class="pat-table__body">
+                  <tr class="pat-table__row">
+                    <td class="pat-table__data" data-column="First Name">Robin</td>
+                    <td class="pat-table__data" data-column="Last Name">Hood</td>
+                    <td class="pat-table__data" data-column="Job Title">Outlaw Archer</td>
+                    <td class="pat-table__data" data-column="Opponent">Sheriff of Nottingham</td>
+                  </tr>
+                  <tr class="pat-table__row">
+                    <td class="pat-table__data" data-column="First Name">Peter</td>
+                    <td class="pat-table__data" data-column="Last Name">Pan</td>
+                    <td class="pat-table__data" data-column="Job Title">Free-spirited Flying Boy</td>
+                    <td class="pat-table__data" data-column="Opponent">Captain Hook</td>
+                  </tr>
+                  <tr class="pat-table__row">
+                    <td class="pat-table__data" data-column="First Name">Shrek</td>
+                    <td class="pat-table__data" data-column="Last Name">-</td>
+                    <td class="pat-table__data" data-column="Job Title">Anti-social Territorial Ogre</td>
+                    <td class="pat-table__data" data-column="Opponent">Lord Farquaad</td>
+                  </tr>
+                  <tr class="pat-table__row">
+                    <td class="pat-table__data" data-column="First Name">Sherlock</td>
+                    <td class="pat-table__data" data-column="Last Name">Holmes</td>
+                    <td class="pat-table__data" data-column="Job Title">Consulting Detective</td>
+                    <td class="pat-table__data" data-column="Opponent">Professor James Moriarty</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="pat-table__base col-smartphone-12">
+                <thead class="pat-table__head">
+                  <tr class="pat-table__row">
+                    <th class="pat-table__header" colspan="2">Computer A</th>
+                    <th class="pat-table__header" colspan="2">Computer B</th>
+                  </tr>
+                </thead>
+                <tbody class="pat-table__body">
+                  <tr class="pat-table__row">
+                    <td class="pat-table__data" rowspan="2">Pros</td>
+                    <td class="pat-table__data">Spec 1</td>
+                    <td class="pat-table__data">Spec 2</td>
+                    <td class="pat-table__data" rowspan="2">Pros</td>
+                  </tr>
+                  <tr class="pat-table__row">
+                    <td class="pat-table__data">Spec 3</td>
+                    <td class="pat-table__data">Spec 4</td>
+                  </tr>
+                  <tr class="pat-table__row">
+                    <td class="pat-table__data" rowspan="2">Cons</td>
+                    <td class="pat-table__data">Spec 1</td>
+                    <td class="pat-table__data">Spec 2</td>
+                    <td class="pat-table__data" rowspan="2">Cons</td>
+                  </tr>
+                  <tr class="pat-table__row">
+                    <td class="pat-table__data">Spec 3</td>
+                    <td class="pat-table__data">Spec 4</td>
+                  </tr>
+                </tbody>
+                <tfoot class="pat-table__foot">
+                  <tr class="pat-table__row">
+                    <td class="pat-table__data" colspan="4">ErgoTechnics@2022</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </section>
+          </div>
+        </div>
+      </article>
+
+      <article class="mod-article__base no-gutter col-smartphone-12" id="forms">
+        <div class="mod-article__container row no-gutter">
+          <header class="mod-article__header col-smartphone-12">
+            <h2 class="cmp-heading__base cmp-heading__base--heading-200">
+              <span class="cmp-heading__main">Forms</span>
+            </h2>
+          </header>
+          <div class="mod-article__body col-smartphone-12">
+            <section class="mod-section__base row">
+              <form class="pat-form__base col-smartphone-12" action="index.html" method="post">
+                <fieldset class="pat-fieldset__base row no-gutter">
+                  <legend class="pat-fieldset__legend col-smartphone-12">Profile Information</legend>
+
+                  <label class="cmp-input__label col-smartphone-6" for="name"
+                    >Name:
+                    <input
+                      class="cmp-input__input"
+                      type="text"
+                      id="name"
+                      name="user_name"
+                      placeholder="Your name"
+                      required
+                    />
+                  </label>
+
+                  <label class="cmp-input__label col-smartphone-6" for="email"
+                    >Email:
+                    <input
+                      class="cmp-input__input"
+                      type="email"
+                      id="email"
+                      name="user_email"
+                      placeholder="Your email"
+                      required
+                    />
+                  </label>
+
+                  <label class="cmp-input__label col-smartphone-12" for="password"
+                    >Password:
+                    <input
+                      class="cmp-input__input"
+                      type="password"
+                      id="password"
+                      name="user_password"
+                      placeholder="Secret password"
+                      required
+                    />
+                  </label>
+                </fieldset>
+
+                <fieldset class="pat-fieldset__base row no-gutter">
+                  <legend class="pat-fieldset__legend col-smartphone-12">Experience:</legend>
+
+                  <label class="cmp-radio__label col-smartphone-12" for="beginner">
+                    <input
+                      class="cmp-radio__input"
+                      type="radio"
+                      id="beginner"
+                      value="beginner"
+                      name="user_experience"
+                    />Beginner</label
+                  >
+
+                  <label class="cmp-radio__label col-smartphone-12" for="intermediate">
+                    <input
+                      class="cmp-radio__input"
+                      type="radio"
+                      id="intermediate"
+                      value="intermediate"
+                      name="user_experience"
+                    />Intermediate</label
+                  >
+
+                  <label class="cmp-radio__label col-smartphone-12" for="advanced">
+                    <input
+                      class="cmp-radio__input"
+                      type="radio"
+                      id="advanced"
+                      value="advanced"
+                      name="user_experience"
+                    />Advanced</label
+                  >
+
+                  <label class="cmp-range__label col-smartphone-12" for="range">Years of experience
+                    <input
+                    class="cmp-range__input"
+                    id="range" type="range" name="range"
+                    value="5" min="0" max="15"
+                    onmousemove="rangevalue.value=value" />
+                    <output id="rangevalue"></output>
+                    </label>
+                </fieldset>
+
+                <fieldset class="pat-fieldset__base row no-gutter">
+                  <legend class="pat-fieldset__legend col-smartphone-12">Profile</legend>
+
+                  <label class="cmp-textarea__label col-smartphone-12" for="bio">Biography:
+                    <textarea class="cmp-textarea__input" id="bio" name="user_bio" rows="4" cols="50">Tell us more about you ;)</textarea>
+                  </label>
+                  
+                  <label class="cmp-select__label col-smartphone-6" for="job">Job Role:
+                    <select class="cmp-select__input" id="job" name="user_job">
+                      <optgroup label="Web">
+                        <option value="frontend_developer">Front-End Developer</option>
+                        <option value="php_developer">PHP Developer</option>
+                        <option value="python_developer">Python Developer</option>
+                        <option value="rails_developer">Rails Developer</option>
+                        <option value="web_designer">Web Designer</option>
+                        <option value="wordpress_developer">Wordpress Developer</option>
+                      </optgroup>
+                      <optgroup label="Mobile">
+                        <option value="android_developer">Android Developer</option>
+                        <option value="ios_developer">IOS Developer</option>
+                        <option value="mobile_designer">Mobile Designer</option>
+                      </optgroup>
+                      <optgroup label="Business">
+                        <option value="business_owner">Business Owner</option>
+                        <option value="freelancer">Freelancer</option>
+                      </optgroup>
+                    </select>
+                  </label>
+                  
+                </fieldset>
+
+                <fieldset class="pat-fieldset__base row no-gutter">
+                  <legend class="pat-fieldset__legend col-smartphone-12"> Interests:</legend>
+
+                  <label class="pat-fieldset__label col-smartphone-12" for="development">
+                    <input class="cmp-checkbox__input" type="checkbox" id="development" value="interest_development" name="user_interest" />Development
+                  </label>
+                  <label class="pat-fieldset__label col-smartphone-12" for="design">
+                    <input class="cmp-checkbox__input" type="checkbox" id="design" value="interest_design" name="user_interest" />Design
+                  </label>
+                  <label class="pat-fieldset__label col-smartphone-12" for="business">
+                    <input class="cmp-checkbox__input" type="checkbox" id="business" value="interest_business" name="user_interest" />Business
+                  </label>
+                </fieldset>
+
+                <div class="mod-form__buttons">
+                  <button class="cmp-button__base cmp-button__base--primary" type="submit">Sign Up</button>
+                  <button class="cmp-button__base cmp-button__base--warning" type="reset">Reset</button>
+                </div>
+              </form>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="mod-footer__base row">
+      <div class="mod-footer__container col-smartphone-12">
+        <div class="row">
+          <address class="m-address__base col-smartphone-12 col-tablet-4">
+            <ul class="cmp-list-unordered__base">
+              <li class="cmp-list-unordered__item">
+                <a class="cmp-link__base" href="mailto:paul.alex.serban@gmail.com">paul.alex.serban@gmail.com</a>
+              </li>
+              <li class="cmp-list-unordered__item">
+                <a class="cmp-link__base" href="https://www.paulserban.eu">www.paulserben.eu</a>
+              </li>
+            </ul>
+          </address>
+          <div class="pat-reference-list__base col-smartphone-12 col-tablet-4">
+            <ul class="cmp-list-unordered__base cmp-list-unordered__base--row row">
+              <li class="cmp-list-unordered__item">
+                <a
+                  class="cmp-link-icon__base"
+                  rel="noopener"
+                  id="freecodecamp-link"
+                  href="https://www.freecodecamp.org/learn/responsive-web-design/"
+                  target="blank"
+                >
+                  <svg src="logo-freecodecamp-icon-vector-01.svg" class="inline-svg cmp-link-icon__icon"></svg>
+                  <span class="cmp-link-icon__tooltip">FreeCodeCamp.org</span>
+                </a>
+              </li>
+              <li class="cmp-list-unordered__item">
+                <a class="cmp-link-icon__base" rel="noopener" id="linkedin" href="#" target="blank">
+                  <svg src="logo-linkedin.svg" class="inline-svg cmp-link-icon__icon"></svg>
+                  <span class="cmp-link-icon__tooltip">LinkedIn</span>
+                </a>
+              </li>
+              <li class="cmp-list-unordered__item">
+                <a class="cmp-link-icon__base" rel="noopener" id="blog" href="#" target="blank">
+                  <svg src="logo-blogger.svg" class="inline-svg cmp-link-icon__icon"></svg>
+                  <span class="cmp-link-icon__tooltip">Blog</span>
+                </a>
+              </li>
+              <li class="cmp-list-unordered__item">
+                <a class="cmp-link-icon__base" rel="noopener" id="github" href="#" target="blank">
+                  <svg src="logo-github.svg" class="inline-svg cmp-link-icon__icon"></svg>
+                  <span class="cmp-link-icon__tooltip">Github</span>
+                </a>
+              </li>
+              <li class="cmp-list-unordered__item">
+                <a class="cmp-link-icon__base" rel="noopener" id="hackerrank" href="#" target="blank">
+                  <svg src="logo-hackerank.svg" class="inline-svg cmp-link-icon__icon"></svg>
+                  <span class="cmp-link-icon__tooltip">HackerRank</span>
+                </a>
+              </li>
+              <li class="cmp-list-unordered__item">
+                <a class="cmp-link-icon__base" rel="noopener" id="#" href="#" target="blank">
+                  <svg src="logo-codepen.svg" class="inline-svg cmp-link-icon__icon"></svg>
+                  <span class="cmp-link-icon__tooltip">CodePen</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <p class="mod-footer__copyright col-smartphone-12">Copyright &copy; Paul Serban 2022</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

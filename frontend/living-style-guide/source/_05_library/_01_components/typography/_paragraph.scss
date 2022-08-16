@@ -8,7 +8,7 @@ $block: "#{$type}-paragraph";
   @include e("base") {
     @include font($body);
 
-    color: var(--text-base-color);
+    color: var(--text-color);
     margin-bottom: $baseline * 2;
   }
 }

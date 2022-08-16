@@ -9,7 +9,7 @@ export const paths = {
     },
     html: {
       htmlDir: "./source",
-      htmlFiles:"./source/html/*.html"
+      htmlFiles:"./source/html/**/*.html"
     },
     styles: {
       scssDir: `../living-style-guide/source/`,
