@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <!--  Use https://realfavicongenerator.net/ to generate your favicons -->
+
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Intermediate</title>
+    <meta name="description" content="TODO - description text" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="TODO - og:title" />
+    <meta property="og:type" content="TODO - og:type" />
+    <meta property="og:url" content="TODO - og:url" />
+    <meta property="og:image" content="TODO - og:image" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/assets/icons/favicon-32x32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/assets/icons/favicon-16x16.png" sizes="16x16" type="image/png" />
+    <link rel="icon" href="/assets/svgs/hammer.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" href="/assets/icons/favicon-32x32.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-touch-icon.png" />
+    <link rel="mask-icon" href="/assets/svgs/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+
+    <!-- Critical Stylesheets - START -->
+    <link rel="stylesheet" href="../css/page/base.page.layer.css" />
+    <link rel="stylesheet" href="../css/template/wiki.template.layer.css" />
+    <!-- Critical Stylesheets - END -->
+
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body class="container lyt-pancake-stack" data-page="technical-documentation" data-template="wiki">
+    <header class="mod-header__base row">
+      <div class="mod-header__content col-smartphone-12">
+        <h1 class="cmp-heading__base cmp-heading__base--page-title cmp-heading__base--is-center-aligned">
+          <span class="cmp-heading__main">HTML Intermediate</span>
+        </h1>
+      </div>
+    </header>
+
+    <main class="lyt-sidebar-says__base mod-main-wiki__base row">
+      <nav class="lyt-sidebar-says__sidebar mod-main-wiki__sidebar mod-navigation-side__base">
+        <ul class="cmp-list-unordered__base">
+          <li class="cmp-list-unordered__item">
+            <a
+              href="#html-multimedia-elements"
+              class="cmp-link__base cmp-link__base--navigation"
+              rel="noopener noreferrer"
+              >HTML Multimedia Elements</a
+            >
+            <ul class="cmp-list-unordered__base cmp-list-unordered__base--bulleted">
+              <li class="cmp-list-unordered__item">
+                <a href="#audio-element" class="cmp-link__base cmp-link__base--navigation" rel="noopener noreferrer"
+                  >Audio Element</a
+                >
+              </li>
+              <li class="cmp-list-unordered__item">
+                <a href="#video-element" class="cmp-link__base cmp-link__base--navigation" rel="noopener noreferrer"
+                  >Video Element</a
+                >
+              </li>
+              <li class="cmp-list-unordered__item">
+                <a href="#picture-element" class="cmp-link__base cmp-link__base--navigation" rel="noopener noreferrer"
+                  >Picture Element</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="cmp-list-unordered__item">
+            <a
+              href="#basics-of-accesibility"
+              class="cmp-link__base cmp-link__base--navigation"
+              rel="noopener noreferrer"
+              >Basics of Accessibility</a
+            >
+          </li>
+          <li class="cmp-list-unordered__item">
+            <a
+              href="#effective-use-of-semantic-elements"
+              class="cmp-link__base cmp-link__base--navigation"
+              rel="noopener noreferrer"
+              >Effective Use of HTML5 Semantic Elements</a
+            >
+          </li>
+          <li class="cmp-list-unordered__item">
+            <a
+              href="#effective-use-of-classes-and-ids"
+              class="cmp-link__base cmp-link__base--navigation"
+              rel="noopener noreferrer"
+              >Effective Use of classes and IDs for naming</a
+            >
+          </li>
+          <li class="cmp-list-unordered__item">
+            <a href="#html-data-attribute" class="cmp-link__base cmp-link__base--navigation" rel="noopener noreferrer"
+              >HTML5 data-* attribute</a
+            >
+          </li>
+          <li class="cmp-list-unordered__item">
+            <a href="#forms" class="cmp-link__base cmp-link__base--navigation" rel="noopener noreferrer">Forms</a>
+            <ul class="cmp-list-unordered__base cmp-list-unordered__base--bulleted">
+              <li class="cmp-list-unordered__item">
+                <a
+                  href="#structure-complex-forms"
+                  class="cmp-link__base cmp-link__base--navigation"
+                  rel="noopener noreferrer"
+                  >Structure complex forms</a
+                >
+              </li>
+              <li class="cmp-list-unordered__item">
+                <a
+                  href="#different-common-user-inputs"
+                  class="cmp-link__base cmp-link__base--navigation"
+                  rel="noopener noreferrer"
+                  >Different common user inputs</a
+                >
+              </li>
+              <li class="cmp-list-unordered__item">
+                <a
+                  href="#form-submission-techniques"
+                  class="cmp-link__base cmp-link__base--navigation"
+                  rel="noopener noreferrer"
+                  >Form submission techniques</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="cmp-list-unordered__item">
+            <a href="#tables" class="cmp-link__base cmp-link__base--navigation" rel="noopener noreferrer">Tables</a>
+            <ul class="cmp-list-unordered__base cmp-list-unordered__base--bulleted">
+              <li class="cmp-list-unordered__item">
+                <a
+                  href="#structure-complex-tables"
+                  class="cmp-link__base cmp-link__base--navigation"
+                  rel="noopener noreferrer"
+                  >Structure complex tables</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="cmp-list-unordered__item">
+            <a href="#basics-of-iframe" class="cmp-link__base cmp-link__base--navigation" rel="noopener noreferrer"
+              >Basic of iframe</a
+            >
+          </li>
+          <li class="cmp-list-unordered__item">
+            <a
+              href="#compatibility-pitfalls-between-current-and-old-browsers"
+              class="cmp-link__base cmp-link__base--navigation"
+              rel="noopener noreferrer"
+              >Compatibility pitfalls between current and old browsers</a
+            >
+          </li>
+          <li class="cmp-list-unordered__item">
+            <a href="#responsive-images" class="cmp-link__base cmp-link__base--navigation" rel="noopener noreferrer"
+              >Responsive Images</a
+            >
+          </li>
+          <li class="cmp-list-unordered__item">
+            <a href="#basics-of-svgs" class="cmp-link__base cmp-link__base--navigation" rel="noopener noreferrer"
+              >Basics of SVGs</a
+            >
+          </li>
+          <li class="cmp-list-unordered__item">
+            <a href="#basics-of-metadata" class="cmp-link__base cmp-link__base--navigation" rel="noopener noreferrer"
+              >Basics of metadata</a
+            >
+            <ul class="cmp-list-unordered__base cmp-list-unordered__base--bulleted">
+              <li class="cmp-list-unordered__item">
+                <a href="#viewport-settings" class="cmp-link__base cmp-link__base--navigation" rel="noopener noreferrer"
+                  >Viewport settings</a
+                >
+              </li>
+              <li class="cmp-list-unordered__item">
+                <a href="#caching" class="cmp-link__base cmp-link__base--navigation" rel="noopener noreferrer"
+                  >Caching</a
+                >
+              </li>
+              <li class="cmp-list-unordered__item">
+                <a href="#encoding" class="cmp-link__base cmp-link__base--navigation" rel="noopener noreferrer"
+                  >Encoding</a
+                >
+              </li>
+              <li class="cmp-list-unordered__item">
+                <a href="#language-settings" class="cmp-link__base cmp-link__base--navigation" rel="noopener noreferrer"
+                  >Language settings</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="lyt-sidebar-says__content mod-main-wiki__content">
+        <article class="mod-article__base" id="html-doctype">
+          <h2 class="cmp-heading__base cmp-heading__base--heading-200 cmp-heading__base--is-center-aligned">
+            <span class="cmp-heading__main">Article heading</span>
+          </h2>
+          <section class="mod-section__base">
+            <h3 class="cmp-heading__base cmp-heading__base--heading-300">
+              <span class="cmp-heading__main">Section heading</span>
+            </h3>
+            <p class="cmp-paragraph__base">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente distinctio minima voluptates adipisci?
+              Necessitatibus cupiditate sapiente aut officia fugiat impedit ab distinctio perspiciatis rerum?
+              Consequatur eligendi rem veniam aperiam nobis!
+            </p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="mod-footer__base row">
+      <div class="mod-footer__container col-smartphone-12">
+        <div class="row">
+          <address class="m-address__base col-smartphone-12 col-tablet-4">
+            <ul class="cmp-list-unordered__base">
+              <li class="cmp-list-unordered__item">
+                <a class="cmp-link__base" href="mailto:paul.alex.serban@gmail.com">paul.alex.serban@gmail.com</a>
+              </li>
+              <li class="cmp-list-unordered__item">
+                <a class="cmp-link__base" href="https://www.paulserban.eu">www.paulserben.eu</a>
+              </li>
+            </ul>
+          </address>
+          <div class="pat-reference-list__base col-smartphone-12 col-tablet-4 offset-4">
+            <ul class="cmp-list-unordered__base cmp-list-unordered__base--row row">
+              <li class="cmp-list-unordered__item">
+                <a
+                  class="cmp-link-icon__base"
+                  rel="noopener"
+                  id="freecodecamp-link"
+                  href="https://www.freecodecamp.org/learn/responsive-web-design/"
+                  target="blank"
+                >
+                  <svg src="logo-freecodecamp-icon-vector-01.svg" class="inline-svg cmp-link-icon__icon"></svg>
+                  <span class="cmp-link-icon__tooltip">FreeCodeCamp.org</span>
+                </a>
+              </li>
+              <li class="cmp-list-unordered__item">
+                <a class="cmp-link-icon__base" rel="noopener" id="linkedin" href="#" target="blank">
+                  <svg src="logo-linkedin.svg" class="inline-svg cmp-link-icon__icon"></svg>
+                  <span class="cmp-link-icon__tooltip">LinkedIn</span>
+                </a>
+              </li>
+
+              <li class="cmp-list-unordered__item">
+                <a class="cmp-link-icon__base" rel="noopener" id="blog" href="#" target="blank">
+                  <svg src="logo-blogger.svg" class="inline-svg cmp-link-icon__icon"></svg>
+                  <span class="cmp-link-icon__tooltip">Blog</span>
+                </a>
+              </li>
+              <li class="cmp-list-unordered__item">
+                <a class="cmp-link-icon__base" rel="noopener" id="github" href="#" target="blank">
+                  <svg src="logo-github.svg" class="inline-svg cmp-link-icon__icon"></svg>
+                  <span class="cmp-link-icon__tooltip">Github</span>
+                </a>
+              </li>
+              <li class="cmp-list-unordered__item">
+                <a class="cmp-link-icon__base" rel="noopener" id="hackerrank" href="#" target="blank">
+                  <svg src="logo-hackerank.svg" class="inline-svg cmp-link-icon__icon"></svg>
+                  <span class="cmp-link-icon__tooltip">HackerRank</span>
+                </a>
+              </li>
+              <li class="cmp-list-unordered__item">
+                <a class="cmp-link-icon__base" rel="noopener" id="#" href="#" target="blank">
+                  <svg src="logo-codepen.svg" class="inline-svg cmp-link-icon__icon"></svg>
+                  <span class="cmp-link-icon__tooltip">CodePen</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <p class="mod-footer__copyright col-smartphone-12">Copyright &copy; Paul Serban 2022</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+/* ------------------------------------ *\
+ * MAIN-WIKI
+\* ------------------------------------ */
+
+$type: "mod";
+$block: "#{$type}-main-wiki";
+
+.#{$block} {
+  @include e("base") {
+    @include relative();
+
+    grid-template-columns: minmax(100px, 25%) 1fr;
+  }
+
+  @include e("sidebar", "content") {
+    height: 50vh;
+    overflow-x: scroll;
+  }
+
+  @include e("sidebar") {
+    align-self: start;
+  }
+
+  @include e("content") {
+    scroll-behavior: smooth;
+  }
+}

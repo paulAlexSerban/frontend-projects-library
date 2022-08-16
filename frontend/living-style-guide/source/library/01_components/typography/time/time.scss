@@ -1,7 +1,0 @@
-$cmp: "a-time";
-
-.#{$cmp} {
-  @include e("base") {
-    color: fx-color($c-gray, battleship-grey);
-  }
-}
