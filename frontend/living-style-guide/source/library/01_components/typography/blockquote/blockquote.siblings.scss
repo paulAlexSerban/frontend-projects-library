@@ -1,9 +1,0 @@
-$cmp: "a-blockquote";
-
-.#{$cmp} {
-  @include e("base") {
-    .o-header__base & {
-      @extend %right-text;
-    }
-  }
-}

@@ -1,9 +1,0 @@
-$cmp: "a-link";
-
-.#{$cmp} {
-  @include e("base") {
-    @include m("navigation") {
-      color: fx-color($c-gray, davys-grey);
-    }
-  }
-}
