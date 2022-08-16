@@ -1,0 +1,49 @@
+/* ------------------------------------ *\
+  * GENERIC TEMPLATE LAYER
+\* ------------------------------------ */
+
+// abstracts
+@import "../../_01_abstracts/abstracts.scss";
+
+// layouts
+@import "../../_04_layouts/grid/minimalist/minimalist.scss";
+
+// components
+@import "../../_05_library/_01_components/typography/paragraph.scss";
+@import "../../_05_library/_01_components/typography/link.scss";
+@import "../../_05_library/_01_components/typography/blockquote.scss";
+@import "../../_05_library/_01_components/typography/heading.scss";
+@import "../../_05_library/_01_components/typography/list-unordered.scss";
+
+@import "../../_05_library/_01_components/form/input.scss";
+@import "../../_05_library/_01_components/form/radio.scss";
+@import "../../_05_library/_01_components/form/range.scss";
+@import "../../_05_library/_01_components/form/checkbox.scss";
+@import "../../_05_library/_01_components/form/textarea.scss";
+@import "../../_05_library/_01_components/form/select.scss";
+
+@import "../../_05_library/_01_components/link-icon.scss";
+@import "../../_05_library/_01_components/image.scss";
+@import "../../_05_library/_01_components/video.scss";
+@import "../../_05_library/_01_components/iframe.scss";
+@import "../../_05_library/_01_components/button.scss";
+
+// pattens
+@import "../../_05_library/_02_patterns/figure.scss";
+@import "../../_05_library/_02_patterns/link-list.scss";
+@import "../../_05_library/_02_patterns/reference-list.scss";
+@import "../../_05_library/_02_patterns/form.scss";
+@import "../../_05_library/_02_patterns/table.scss";
+@import "../../_05_library/_02_patterns/fieldset.scss";
+
+// modules
+@import "../../_05_library/_03_modules/header.scss";
+@import "../../_05_library/_03_modules/navigation-bar.scss";
+@import "../../_05_library/_03_modules/main/main-base.scss";
+@import "../../_05_library/_03_modules/article.scss";
+@import "../../_05_library/_03_modules/section.scss";
+@import "../../_05_library/_03_modules/footer.scss";
+@import "../../_05_library/_03_modules/aside.scss";
+
+// overrides
+@import "../../_07_overrides/overrides.scss";

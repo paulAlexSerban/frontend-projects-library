@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "gulp build --require @babel/register --gulpfile build"
+    "process": "gulp process --require @babel/register --gulpfile build"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +15,7 @@
     "@babel/register": "^7.17.7",
     "del": "^6.1.1",
     "gulp": "^4.0.2",
+    "gulp-notify": "^4.0.0",
     "gulp-plumber": "^1.2.1",
     "gulp-responsive": "^3.0.1",
     "gulp-size": "^4.0.1"

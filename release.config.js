@@ -1,6 +1,6 @@
 module.exports = {
-  branches: "main",
-  repositoryUrl: "https://github.com/paulAlexSerban/fe--ui-techstack-insights",
+  branches: "release",
+  repositoryUrl: "https://github.com/paulAlexSerban/prj--fe-ui-techstack-insights",
   plugins: [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",

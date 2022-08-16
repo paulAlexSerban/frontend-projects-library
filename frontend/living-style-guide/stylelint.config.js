@@ -99,6 +99,7 @@ module.exports = {
           "list.length",
           "list.index",
           "map.keys",
+          "get-color",
           "map.merge",
           "math",
           "layer-index",
@@ -115,9 +116,12 @@ module.exports = {
           "meta.get-function",
           "list.append",
           "font-weight",
-          "fx-color",
+          "map-deep-get",
+          "get-color",
           "color.adjust",
-          "box-shadow"
+          "color.mix",
+          "box-shadow",
+          "math.round"
         ],
       },
     ],

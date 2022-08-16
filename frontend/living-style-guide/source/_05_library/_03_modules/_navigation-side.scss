@@ -1,0 +1,16 @@
+/* ------------------------------------ *\
+ * NAVIGATION-SIDE
+\* ------------------------------------ */
+
+$type: "mod";
+$block: "#{$type}-navigation-side";
+
+.#{$block} {
+  @include e("base") {
+    @extend %margin-bottom-64;
+    @extend %size-fill-vertical;
+    @extend %padding-right-16;
+
+    border-right: 1px solid get-color($c-gray, sonic-silver);
+  }
+}
