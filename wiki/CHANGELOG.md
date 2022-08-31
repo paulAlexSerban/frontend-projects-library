@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/paulAlexSerban/prj--fe-ui-techstack-insights/compare/v1.6.0...v1.7.0) (2022-08-31)
+
+
+### Features
+
+* **meta:** add meta tags descriptions ([e3cbb52](https://github.com/paulAlexSerban/prj--fe-ui-techstack-insights/commit/e3cbb5268f9eed576ed5da8faf800c8a7666ed77))
+
 # [1.6.0](https://github.com/paulAlexSerban/prj--fe-ui-techstack-insights/compare/v1.5.2...v1.6.0) (2022-08-16)
 
 
