@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
+    <!-- meta element to define the page's content type and character set -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>HTML Intermediate</title>
-    <meta name="description" content="HTML Intermediate demo landing page elements" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- 
+      - define how pages should be handled by caches 
+      - may be cached in public shared caches
+      - http-equiv="Cache-control - is specifically used by Internet Explorer
+    -->
+    <meta http-equiv="Cache-control" content="public">
+    <!-- 
+      meta element to specify some "description" of the page - in some situations 
+      this description is used in the snippet shown in search results
+     -->
+    <meta name="description" content="HTML Intermediate demo landing page elements" />
+
+    <!-- meta element to specify some "keywords" that users might use to look for the page -->
+    <meta name="keywords" content="HTML Intermediate demo landing page elements" />
+
+    <!-- 
+      meta element to tell the browser how to render a page on a mobile device - presence 
+      of this tag indicates to Google that the page is mobile friendly
+        - width=device-width - instructs the page to match the screen's width in device-independent pixels
+        - initial-scale=1 - instructs browsers to establish a 1:1 relationship between CSS pixels 
+        and device-independent pixels regardless of device orientation, and allows the page to 
+        take advantage of the full landscape width
+        - shrink to fit -  is only for safari when split or side-view mode so that elements are not shrinked
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+    <!--
+      OpenGraph metadata
+      - enables any web page to become a rich object in a social graph - this is used on Facebook to allow any web 
+      page to have the same functionality as any other object on Facebook
+      - og:title - title of your object as it should appear within the graph
+      - og:type - the type of your object
+      - og:description - description of your object
+      - og:image - image URL which should represent your object within the graph
+      - og:url - canonical URL of your object that will be used as its permanent ID in the graph
+      - og:site_name - if your object is part of a larger web site, the name which should be displayed for the overall site
+    -->
     <meta property="og:title" content="HTML Intermediate" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="HTML Intermediate demo landing page elements"/>
-       <!-- adjust after deploying to github pages -->
+    <meta property="og:description" content="HTML Intermediate demo landing page elements" />
+    <!-- adjust after deploying to github pages and redeploy -->
     <meta property="og:url" content="https://github.com/" />
     <meta property="og:image" content="../assets/images/lorem-image-original.webp" />
+    <meta property="og:site_name" content="Front-end UI Tech-stack Insights" />
 
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/assets/icons/favicon-32x32.png" sizes="32x32" type="image/png" />
@@ -21,15 +57,17 @@
     <link rel="shortcut icon" href="/assets/icons/favicon-32x32.png" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-touch-icon.png" />
     <link rel="mask-icon" href="/assets/svgs/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#2d89ef" />
-
+    
     <!-- Critical Stylesheets - START -->
     <link rel="stylesheet" href="../css/page/base.page.layer.css" />
     <link rel="stylesheet" href="../css/template/landing.template.layer.css" />
     <!-- Critical Stylesheets - END -->
 
     <link rel="manifest" href="site.webmanifest" />
+
+    <!-- indicates a suggested color that user agents should use to customize the display of the page or of the surrounding user interface -->
     <meta name="theme-color" content="#fafafa" />
+    <title>HTML Intermediate</title>
   </head>
 
   <body class="container" data-page="index" data-template="template">
@@ -389,24 +427,34 @@
                     />Advanced</label
                   >
 
-                  <label class="cmp-range__label col-smartphone-12" for="range">Years of experience
+                  <label class="cmp-range__label col-smartphone-12" for="range"
+                    >Years of experience
                     <input
-                    class="cmp-range__input"
-                    id="range" type="range" name="range"
-                    value="5" min="0" max="15"
-                    onmousemove="rangevalue.value=value" />
+                      class="cmp-range__input"
+                      id="range"
+                      type="range"
+                      name="range"
+                      value="5"
+                      min="0"
+                      max="15"
+                      onmousemove="rangevalue.value=value"
+                    />
                     <output id="rangevalue"></output>
-                    </label>
+                  </label>
                 </fieldset>
 
                 <fieldset class="pat-fieldset__base row no-gutter">
                   <legend class="pat-fieldset__legend col-smartphone-12">Profile</legend>
 
-                  <label class="cmp-textarea__label col-smartphone-12" for="bio">Biography:
-                    <textarea class="cmp-textarea__input" id="bio" name="user_bio" rows="4" cols="50">Tell us more about you ;)</textarea>
+                  <label class="cmp-textarea__label col-smartphone-12" for="bio"
+                    >Biography:
+                    <textarea class="cmp-textarea__input" id="bio" name="user_bio" rows="4" cols="50">
+Tell us more about you ;)</textarea
+                    >
                   </label>
 
-                  <label class="cmp-select__label col-smartphone-6" for="job">Job Role:
+                  <label class="cmp-select__label col-smartphone-6" for="job"
+                    >Job Role:
                     <select class="cmp-select__input" id="job" name="user_job">
                       <optgroup label="Web">
                         <option value="frontend_developer">Front-End Developer</option>
@@ -429,16 +477,34 @@
                   </label>
                 </fieldset>
                 <fieldset class="pat-fieldset__base row no-gutter">
-                  <legend class="pat-fieldset__legend col-smartphone-12"> Interests:</legend>
+                  <legend class="pat-fieldset__legend col-smartphone-12">Interests:</legend>
 
                   <label class="pat-fieldset__label col-smartphone-12" for="development">
-                    <input class="cmp-checkbox__input" type="checkbox" id="development" value="interest_development" name="user_interest" />Development
+                    <input
+                      class="cmp-checkbox__input"
+                      type="checkbox"
+                      id="development"
+                      value="interest_development"
+                      name="user_interest"
+                    />Development
                   </label>
                   <label class="pat-fieldset__label col-smartphone-12" for="design">
-                    <input class="cmp-checkbox__input" type="checkbox" id="design" value="interest_design" name="user_interest" />Design
+                    <input
+                      class="cmp-checkbox__input"
+                      type="checkbox"
+                      id="design"
+                      value="interest_design"
+                      name="user_interest"
+                    />Design
                   </label>
                   <label class="pat-fieldset__label col-smartphone-12" for="business">
-                    <input class="cmp-checkbox__input" type="checkbox" id="business" value="interest_business" name="user_interest" />Business
+                    <input
+                      class="cmp-checkbox__input"
+                      type="checkbox"
+                      id="business"
+                      value="interest_business"
+                      name="user_interest"
+                    />Business
                   </label>
                 </fieldset>
 
