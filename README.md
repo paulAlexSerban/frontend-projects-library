@@ -19,9 +19,13 @@
   - CPUs: 4
   - Memory: 8.00 GBs
 
-### File structure
-
-- File Structure based on `paulAlexSerban/pbanf@^1.0.0`
+## Start Development Steps
+1. `nvm use` - to set node version to `v14.19.1` as defined in `.nvmrc`
+2. `npm run install:root && bash scripts/assets-install.bash && bash scripts/frontend-static-website-install.bash && bash scripts/frontend-living-style-guide-install.bash`
+3. `bash scripts/docker-all-start.bash`
+4. `bash scripts/assets-process.bash`
+5. `bash scripts/frontend-living-style-guide-compile.bash development`
+6. `bash scripts/frontend-static-website-build.bash`
 
 ## Commands
 
@@ -34,12 +38,15 @@
 - `bash scripts/docker-all-stop.bash` - stop all docker containers
 - `bash scripts/docker-all-clean-stop.bash` - stop all docker container and clean leftovers
 
+- `bash scripts/assets-install.bash` - install assets dependencies
+- `bash scripts/assets-process.bash` - process assets to be used in the project
+
 - `bash scripts/frontend-static-website-install.bash` - install static-website frontend project dependencies
 - `bash scripts/frontend-static-website-build.bash` - build static-website frontend project dependencies
 
 - `bash scripts/frontend-living-style-guide-install.bash` - install project dependencies
-- `bash scripts/frontend-living-style-guide-compile development` - compile for development environment
-- `bash scripts/frontend-living-style-guide-compile production` - compile for production environment
+- `bash scripts/frontend-living-style-guide-compile.bash development` - compile for development environment
+- `bash scripts/frontend-living-style-guide-compile.bash production` - compile for production environment
 
 ## Useful Local Development URLs
 
