@@ -1,3 +1,11 @@
+## [1.7.1](https://github.com/paulAlexSerban/prj--fe-ui-techstack-insights/compare/v1.7.0...v1.7.1) (2023-09-15)
+
+
+### Bug Fixes
+
+* **node:** updated to node 18.17.1 ([591274b](https://github.com/paulAlexSerban/prj--fe-ui-techstack-insights/commit/591274bc63e7d295cc5e262ede3066706d1e390b))
+* **readme:** small readme and dependencies update ([45b0b60](https://github.com/paulAlexSerban/prj--fe-ui-techstack-insights/commit/45b0b6032fb2abc928ab98d6ae07e8454dc978e1))
+
 # [1.7.0](https://github.com/paulAlexSerban/prj--fe-ui-techstack-insights/compare/v1.6.0...v1.7.0) (2022-08-31)
 
 
