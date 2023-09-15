@@ -1,7 +1,5 @@
 # Front-end UI Tech-stack Insights
 
-## Tech-stack
-
 [![Traefik](https://img.shields.io/badge/Traefik-v2-green)](https://traefik.io/)
 [![NodeJS](https://img.shields.io/badge/NodeJS-18.17.1-green)](https://nodejs.org/docs/latest-v14.x/api/)
 [![Docker](https://img.shields.io/badge/Docker-20-blue)](https://docs.docker.com/release-notes/)
@@ -9,50 +7,94 @@
 [![Commitizen Friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Semantic Versioning](https://img.shields.io/badge/Semantic%20Versioning-2.0.0-green)](https://semver.org/spec/v2.0.0.html)
 
-## About
+## About 📖
 
-- Project developed to showcase and demo the core UI technology stack - HTML, CSS and JavaScript.
+This project serves as a comprehensive guide and demo for understanding and implementing front-end UI technologies. It showcases the core UI technology stack including HTML, CSS, and JavaScript, supported by detailed technical documentation and live demo pages.
 
-### Docker Desktop config for local development
+## Features 🌟
 
-- in Docker Desktop -> Settings -> Resources
-  - CPUs: 4
-  - Memory: 8.00 GBs
+-   Comprehensive Technical Documentation 📚
+-   Demo Pages for Hands-on Learning 🎮
+-   Dockerized Environment for Easy Setup 🐳
+-   Pre-configured Traefik and Nginx 🛠️
 
-## Start Development Steps
-1. `nvm use` - to set node version to `v18.17.1` as defined in `.nvmrc`
-2. `npm run install:root && bash scripts/assets-install.bash && bash scripts/frontend-static-website-install.bash && bash scripts/frontend-living-style-guide-install.bash`
-3. `bash scripts/docker-all-start.bash`
-4. `bash scripts/assets-process.bash`
-5. `bash scripts/frontend-living-style-guide-compile.bash development`
-6. `bash scripts/frontend-static-website-build.bash`
+## Prerequisites 🛠️
 
-## Commands
+-   Docker Desktop
+-   NodeJS 18.17.1
+-   NVM (Node Version Manager)
 
-- `npm run install:root` - install root dependencies
+### Docker Desktop config for local development 🛠️
 
-- `bash scripts/docker-all-start.bash` - start all docker containers
-- `bash scripts/docker-traefik-proxy-start.bash` - start traefik container
-- `bash scripts/docker-static-website-start.bash` - start static-website container
+-   In Docker Desktop -> Settings -> Resources
+    -   CPUs: 4
+    -   Memory: 8.00 GB
 
-- `bash scripts/docker-all-stop.bash` - stop all docker containers
-- `bash scripts/docker-all-clean-stop.bash` - stop all docker container and clean leftovers
+## Getting Started 🚀
 
-- `bash scripts/assets-install.bash` - install assets dependencies
-- `bash scripts/assets-process.bash` - process assets to be used in the project
+Follow these steps to set up the development environment.
 
-- `bash scripts/frontend-static-website-install.bash` - install static-website frontend project dependencies
-- `bash scripts/frontend-static-website-build.bash` - build static-website frontend project dependencies
+1. **Node Version Setup**
+    ```bash
+    nvm use
+    ```
+2. **Install Dependencies and Initialize Environment**
+    ```bash
+    npm run install:root
+    bash scripts/assets-install.bash
+    bash scripts/frontend-static-website-install.bash
+    bash scripts/frontend-living-style-guide-install.bash
+    ```
+3. **Start Docker Containers**
+    ```bash
+    bash scripts/docker-all-start.bash
+    ```
+4. **Process Assets**
+    ```bash
+    bash scripts/assets-process.bash
+    ```
+5. **Compile Living Style Guide for Development**
+    ```bash
+    bash scripts/frontend-living-style-guide-compile.bash development
+    ```
+6. **Build Static Website**
+    ```bash
+    bash scripts/frontend-static-website-build.bash
+    ```
 
-- `bash scripts/frontend-living-style-guide-install.bash` - install project dependencies
-- `bash scripts/frontend-living-style-guide-compile.bash development` - compile for development environment
-- `bash scripts/frontend-living-style-guide-compile.bash production` - compile for production environment
+## Commands 📜
 
-## Useful Local Development URLs
+Refer to the below commands for easy navigation and operations.
 
-- [traefik dashboard](http://localhost:8080/dashboard)
-- [poc](https://nginx-fe-ui-techstack-insights.localhost/)
+### Dependency Management
 
-## Resources
+-   `npm run install:root` - Install root dependencies.
 
-- [coding style guide](https://cssguidelin.es/)
+### Docker Operations
+
+-   `bash scripts/docker-all-start.bash` - Start all docker containers.
+-   `bash scripts/docker-traefik-proxy-start.bash` - Start Traefik container.
+-   `bash scripts/docker-static-website-start.bash` - Start static-website container.
+-   `bash scripts/docker-all-stop.bash` - Stop all docker containers.
+-   `bash scripts/docker-all-clean-stop.bash` - Stop and clean all docker containers.
+
+### Assets and Frontend Operations
+
+-   `bash scripts/assets-install.bash` - Install assets dependencies.
+-   `bash scripts/assets-process.bash` - Process assets for the project.
+-   `bash scripts/frontend-static-website-install.bash` - Install static website dependencies.
+-   `bash scripts/frontend-static-website-build.bash` - Build static website.
+
+### Living Style Guide Operations
+
+-   `bash scripts/frontend-living-style-guide-install.bash` - Install Living Style Guide dependencies.
+-   `bash scripts/frontend-living-style-guide-compile.bash` - Compile for specific environment (development/production).
+
+## Useful Local Development URLs 🌐
+
+-   [Traefik Dashboard](http://localhost:8080/dashboard)
+-   [POC Site](https://nginx-fe-ui-techstack-insights.localhost/)
+
+## Resources 📚
+
+-   [Coding Style Guide](https://cssguidelin.es/)
