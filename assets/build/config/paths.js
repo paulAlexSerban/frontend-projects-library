@@ -5,10 +5,11 @@ export const paths = {
       images: [`source/images/*`],
       svgs: [`source/svgs/*.svg`],
       videos: [`source/videos/*`],
-      audio: [`source/audio/*`]
-    }
+      audio: [`source/audio/*`],
+    },
   },
   dist: {
     dir: `./dist`,
+    images: `dist/images`,
   },
 };
