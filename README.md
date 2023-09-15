@@ -3,7 +3,7 @@
 ## Tech-stack
 
 [![Traefik](https://img.shields.io/badge/Traefik-v2-green)](https://traefik.io/)
-[![NodeJS](https://img.shields.io/badge/NodeJS-14.19.1-green)](https://nodejs.org/docs/latest-v14.x/api/)
+[![NodeJS](https://img.shields.io/badge/NodeJS-18.17.1-green)](https://nodejs.org/docs/latest-v14.x/api/)
 [![Docker](https://img.shields.io/badge/Docker-20-blue)](https://docs.docker.com/release-notes/)
 [![Nginx](https://img.shields.io/badge/Nginx-1.21.6-green)](https://www.nginx.com/)
 [![Commitizen Friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
@@ -20,7 +20,7 @@
   - Memory: 8.00 GBs
 
 ## Start Development Steps
-1. `nvm use` - to set node version to `v14.19.1` as defined in `.nvmrc`
+1. `nvm use` - to set node version to `v18.17.1` as defined in `.nvmrc`
 2. `npm run install:root && bash scripts/assets-install.bash && bash scripts/frontend-static-website-install.bash && bash scripts/frontend-living-style-guide-install.bash`
 3. `bash scripts/docker-all-start.bash`
 4. `bash scripts/assets-process.bash`
