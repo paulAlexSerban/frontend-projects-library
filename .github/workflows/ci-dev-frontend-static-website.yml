@@ -49,11 +49,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: "🔧  Setup NodeJS 14.19.1"
+      - name: "🔧  Setup NodeJS 18.17.1"
         if: steps.changed-frontend-static-website-files.outputs.any_changed == 'true'
         uses: actions/setup-node@v1
         with:
-          node-version: 14.19.1
+          node-version: 18.17.1
 
       - name: "🔧  Install npm@latest"
         if: steps.changed-frontend-static-website-files.outputs.any_changed == 'true'
